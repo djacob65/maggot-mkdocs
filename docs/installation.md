@@ -1,0 +1,150 @@
+---
+title:  Maggot - Installation
+summary: 
+authors:
+    - Daniel Jacob
+date: 2023-10-09
+some_url:
+---
+
+<style>.md-typeset h1 {display: none;} .md-nav__item {font-size: medium}</style>
+
+### Install on your linux computer or linux / unix server
+
+Requirements: a recent OS that support Docker (see [docker.com][4]{:target="_blank"})
+
+<br>
+
+#### Retrieving the code
+Go to the destination directory of your choice then clone the repository and `cd` to your clone path:
+
+```sh
+git clone https://github.com/inrae/pgd-mmdt.git pgd-mmdt
+cd pgd-mmdt
+```
+
+<br>
+
+#### Installation of Docker containers
+
+MAGGOT uses 3 Docker images for 3 distinct services:
+
+* **pgd-mmdt-db** which hosts the mongoDB database
+* **pgd-mmdt-scan** which scans the data and updates the contents of the database and the web interface
+* **pgd-mmdt-web** which hosts the web server and the web interface pages
+
+<br>
+
+#### Configuration
+
+*  *[run][23]{:target="_blank"}* : defines web port, root of the data directory (including for development)
+*  *[dockerdbpart/initialisation/setupdb-js.template][20]{:target="_blank"}* : defines MongoDB settings
+*  *[dockerscanpart/scripts/config.py][21]{:target="_blank"}* : defines MongoDB settings (dbserver, dbport, username, password)
+*  *[web/inc/config/mongodb.inc][24]{:target="_blank"}* : defines MongoDB settings (dbserver, dbport, username, password)
+*  *[web/inc/config/config.inc][22]{:target="_blank"}* : defines many of web parameters (modify only if necessary)
+*  ***web/inc/config/local.inc*** : defines the application parameters specific to the local installation (not erase when updating).
+
+***Warning*** : You have to pay attention to put the same MongoDB settings in all the above configuration files. It is best not to change anything. It would have been preferable to put a single configuration file but this was not yet done given the different languages involved (bash, javascript, python, PHP). To be done!
+
+***Note*** : If you want to run multiple instances, you will need to change in the *[run][23]{:target="_blank"}* file, *i)* the container names, *ii)* the data path, *iii)* the port number and the MongoDB volume name, and also the MongoDB port in the different configuration files.
+
+The following two JSON files are defined by default but can be easily configured from the web interface. See the [Terminology Definition](../configuration/config) section.
+
+*  ***web/conf/config_terms.json*** : define the terminology (see below)
+*  ***web/conf/maggot-schema.json*** : define the JSON schema used to validate metadata files (see below)
+
+<br>
+
+#### Commands 
+
+The ***run*** shell script allows you to perform multiple actions by specifying an option :
+
+```sh
+cd pgd-mmdt
+sh ./run <option>
+```
+
+**Options**:
+
+* ***build*** : Create the 3 Docker images namely ***pgd-mmdt-db***, ***pgd-mmdt-scan*** and ***pgd-mmdt-web***
+* ***start*** : _1_) Launch the 3 services by creating the Docker containers corresponding to the Docker images; _2_) Create also the MongoDB volume.
+* ***stop*** :  _1_) Remove all the 3 Docker containers; _2_) Remove the MongoDB volume.
+* ***initdb*** : Create and initialize the Mongo collection
+* ***scan*** : Scan the data and update the contents of the database and the web interface
+* ***fullstart*** : Perform the 3 actions ***start***, ***initdb*** and ***scan***
+* ***restart*** : Perform the 2 actions ***stop*** then ***fullstart***
+* ***ps*** : Check that all containers are running correctly
+* ***passwd*** <_user_>: Define the admin password if no _user_ is specified, allowing you to copy the new configuration file on the server via the web interface (see [configuration](../configuration) and to add entries in dictionaries. If a _user_ is specified, the dictionary consultation will be authorized for this user.
+
+<br>
+
+#### Starting the application
+
+* You must first build the 3 docker container images if this has not already been done, by :
+   ```sh
+   sh ./run build
+   ```
+
+* The application can be sequentially started :
+
+    * Starting the web interface
+     ```sh
+     sh ./run start
+     ```
+    * Initialization of the MongoDB database
+     ```sh
+     sh ./run initdb
+     ```
+    * Scanning the data directory for metadata files (META_XXXX.json)
+     ```sh
+     sh ./run scan
+     ```
+
+* You can also launch these 3 steps with a single command:
+   ```sh
+   sh ./run fullstart
+   ```
+
+<br>
+
+#### Stoping the application
+
+* To stop the application :
+   ```sh
+   sh ./run stop
+   ```
+
+
+------
+
+### Architecture diagram
+
+<center>
+<a href="../images/schema.png" data-lightbox="fig0"><img src="../images/schema.png" width="800px"></a><br>
+**_Note:_**  _See how to do proceed for [configuration steps](../configuration)._
+</center>
+
+<br>
+
+[1]: https://en.wikipedia.org/wiki/Virtual_machine
+[2]: https://www.virtualbox.org/
+[3]: https://www.vmware.com/products/workstation-player.html
+[4]: https://www.docker.com/get-started/
+[5]: https://opensource.com/resources/what-docker
+[6]: https://winscp.net/eng/download.php
+[7]: https://kapitainsky.github.io/RcloneBrowser/
+[8]: https://www.upguard.com/blog/smb-port#:~:text=SMB%20ports%20are%20generally%20port,ports%20communicate%20via%20Port%20139.
+[9]: https://en.wikipedia.org/wiki/Data_center#:~:text=A%20data%20center%20(American%20English,as%20telecommunications%20and%20storage%20systems.
+[10]: https://nextcloud.com/
+[11]: https://rclone.org/
+[12]: https://www.vmware.com/products/esxi-and-esx.html
+[13]: https://www.openstack.org/
+[14]: https://inrae.github.io/jupyterhub-vm/
+[15]: https://ucr-research-computing.github.io/Knowledge_Base/how_to_mount_google_drive.html
+[16]: https://www.youtube.com/watch?v=CaDzYUSdVn8&ab_channel=URTechDotCa
+
+[20]: https://github.com/inrae/pgd-mmdt/blob/main/dockerdbpart/initialisation/setupdb-js.template
+[21]: https://github.com/inrae/pgd-mmdt/blob/main/dockerscanpart/scripts/config.py
+[22]: https://github.com/inrae/pgd-mmdt/blob/main/web/inc/config/config.inc
+[23]: https://github.com/inrae/pgd-mmdt/blob/main/run
+[24]: https://github.com/inrae/pgd-mmdt/blob/main/web/inc/config/mongodb.inc
