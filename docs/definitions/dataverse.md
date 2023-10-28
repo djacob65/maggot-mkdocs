@@ -14,6 +14,8 @@ some_url:
 
 ---
 
+<img src="../../images/dataverse_logo.png" width="400px">
+
 * **Dataverse definition File**
      * Example of Dataverse JSON file generated based on the definition file itself given as an example below.
 		  * [Dataverse JSON of the FRIM dataset][1]{:target="_blank"}

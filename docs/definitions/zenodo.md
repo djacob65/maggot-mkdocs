@@ -14,6 +14,8 @@ some_url:
 
 ---
 
+<img src="../../images/zenodo_logo.png" width="400px">
+
 * **Zenodo definition File**
 
      * Example of Zenodo JSON file generated based on the definition file itself given as an example below.

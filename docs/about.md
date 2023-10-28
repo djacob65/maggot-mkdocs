@@ -73,7 +73,7 @@ some_url:
 <br><br>
 
 <center>
-<a href="../images/logoCloud.png" data-lightbox="fig1"><img src="../images/logoCloud.png" width="800px"></a>
+<a href="../images/LogoCloud.png" data-lightbox="fig1"><img src="../images/LogoCloud.png" width="800px"></a>
 </center>
 
 <br><br>

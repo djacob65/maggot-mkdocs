@@ -13,7 +13,9 @@ some_url:
 
 * The use of dictionaries has no other purpose to facilitate the entry of metadata, entry which can be long and repetitive in generalist data warehouses (such as repository based on Dataverse).
 * Dictionaries allow you to record multiple information necessary to define an entity, such as the names of people or even the funders. These information, once entered and saved in a file called a dictionary, can be subsequently associated with the corresponding entity. 
-* The dictionaries offered by default are: people, funders, data producers, as well as a vocabulary dictionary allowing you to mix ontologies and thesauri from several sources. 
+* The dictionaries offered by default are: people, funders, data producers, as well as a vocabulary dictionary allowing you to mix ontologies and thesauri from several sources.
+     * The following dictionaries : people (***people***), funders (***grant***) and data producers (***producer***) must not be changed in their format nor in their name because they are strongly linked with their internal use. 
+	 * On the other hand, the vocabulary dictionary (***vocabulary***) can be duplicated but while keeping its format (same columns and same layout).
 * To add a new dictionary, simply create a directory under *[web/cvlist][10]{:target="_blank"}* then putting the files corresponding to the dictionary inside. Dictionaries will be automatically found by browsing this directory.
 * Dictionary files are made using a simple spreadsheet then exported in TSV[^1] format.
 * Dictionaries are accessed through secure access limited to administrators allowing their editing. The login is by default 'admin'. You can add another account for consultation only using the following command: 
@@ -23,8 +25,8 @@ sh ./run passwd <user>
 
 <br>
 
-#### Example with the people dictionary
-
+#### The people dictionary
+* **_Note_** : must not be changed in its format nor in its name
 * Like any dictionary, there must be 3 files (see below). Please note that the names of these files must always contain the name of the dictionary, i.e. same as the directory.
 <center>
 <a href="../images/dico0.png" data-lightbox="fig0"><img src="../images/dico0.png" width="600px"></a>
@@ -57,16 +59,19 @@ get_dictionary_values('people', merge=[0,' ',1])
 #### Other dictionaries
 
 * **Funders** : The dictionary of the funders allows you to define the funding agency, project ID and its corresponding URL.
+    * **_Note_** : must not be changed in its format nor in its name
 <center>
 <a href="../images/dico3.png" data-lightbox="fig3"><img src="../images/dico3.png" width="400px"></a>
 </center><br>
 
 * **Producers** : The dictionary of the data producers allows you to define their Institute and  project ID and their corresponding URL. Optionally, you can add the URL of the logo.
+    * **_Note_** : must not be changed in its format nor in its name
 <center>
 <a href="../images/dico4.png" data-lightbox="fig4"><img src="../images/dico4.png" width="400px"></a>
 </center><br>
 
 * **Vocabulary** : Use this dictionary for mixing thesauri and ontologies in order to better target the entire controlled vocabulary of its field of application. Only the vocabulary is mandatory, the URL linked to an ontology or a thesaurus is optional. See [Vocabulary](../vocabulary) section to learn the extent of the possibilities concerning vocabulary in Maggot.
+    * **_Note_** : can be duplicated but while keeping its format (same columns and same layout).
 <center>
 <a href="../images/dico5.png" data-lightbox="fig5"><img src="../images/dico5.png" width="400px"></a>
 </center><br>

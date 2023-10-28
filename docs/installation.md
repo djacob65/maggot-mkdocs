@@ -11,7 +11,7 @@ some_url:
 
 ### Install on your linux computer or linux / unix server
 
-Requirements: a recent OS that support Docker (see [docker.com][4]{:target="_blank"})
+Requirements: The installation must be carried out on a (virtual) machine with  a recent Linux OS that support [Docker][4]{:target="_blank"} (see [Infrastructure](../Infrastructure))
 
 <br>
 
@@ -50,8 +50,8 @@ MAGGOT uses 3 Docker images for 3 distinct services:
 
 The following two JSON files are defined by default but can be easily configured from the web interface. See the [Terminology Definition](../configuration/config) section.
 
-*  ***web/conf/config_terms.json*** : define the terminology (see below)
-*  ***web/conf/maggot-schema.json*** : define the JSON schema used to validate metadata files (see below)
+*  ***web/conf/config_terms.json*** : define the [terminology](../definitions/terminology)
+*  ***web/conf/maggot-schema.json*** : define the JSON schema used to validate metadata files.
 
 <br>
 

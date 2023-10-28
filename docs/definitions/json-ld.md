@@ -13,12 +13,14 @@ some_url:
 
 ---
 
+<a href="../../images/jsonld_fig1.png" data-lightbox="fig0"><img src="../../images/jsonld_fig1.png" width="800px"></a>
+
 * **JSON-LD definition File**
 
 	 * Metadata schemas used to build the model proposed by default:
 		  * [Schema.org][2]{:target="_blank"}, [Bioschemas.org][3]{:target="_blank"}, [Datacite][4]{:target="_blank"}, [DDI-RDF][5]{:target="_blank"}, [DubinCore][6]{:target="_blank"}, [Dataverse][7]{:target="_blank"}
      * Example of JSON-LD file generated based on the definition file itself given as an example below.
-		  * [JSON-LD file of the FRIM dataset][1]{:target="_blank"}
+ 		  * [JSON-LD file of the FRIM dataset][1]{:target="_blank"}
      * Below an example of JSON-LD definition file (TSV)
 <center>
 <a href="../../images/jsonld_conf0.png" data-lightbox="conf0"><img src="../../images/jsonld_conf0.png" width="600px"></a>

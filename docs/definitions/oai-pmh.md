@@ -13,6 +13,8 @@ some_url:
 
 ---
 
+<a href="../../images/oai_fig1.png" data-lightbox="fig0"><img src="../../images/oai_fig1.png" width="600px"></a>
+
 * **OAI-PMH definition File**
      * Based on the [Open Archives Initiative Protocol for Metadata Harvesting][1]{:target="_blank"} - [Version 2][2]{:target="_blank"}
 	 * Example of a [OAI-PMH Data Provider Validation][4]{:target="_blank"}

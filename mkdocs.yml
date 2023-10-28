@@ -4,9 +4,10 @@ site_author: Daniel Jacob
 copyright: INRAE, 2023
 docs_dir: docs/
 
+
 theme: 
   name: material
-  custom_dir: material/
+#  custom_dir: material/
   highlightjs: true
   features:
 #    - navigation.tabs
@@ -39,7 +40,7 @@ extra_javascript:
   - js/jquery-2.1.1.min.js
   - js/lightbox.min.js
   - js/mermaid.min.js
-  - js/knockout-min.js
+  - js/extra.js
 #  - https://unpkg.com/mermaid@8.8.0/dist/mermaid.min.js
 
 extra_css:
@@ -56,6 +57,7 @@ plugins:
 #    - pdf-with-js
 
 markdown_extensions:
+  - abbr
   - admonition
   - attr_list
   - codehilite:
@@ -101,11 +103,12 @@ markdown_extensions:
 nav:
     - Home: index.md
     - Presentation: presentation.md
-    - Installation: installation.md
     - Infrastructure: infrastructure.md
+    - Installation: installation.md
     - Definition files:
       - definitions/index.md
       - Terminology : definitions/terminology.md
+      - Vocabulary: definitions/vocabulary.md
       - Mapping: definitions/mapping.md
       - Dataverse: definitions/dataverse.md
       - Zenodo: definitions/zenodo.md
@@ -113,7 +116,6 @@ nav:
       - OAI-PMH: definitions/oai-pmh.md
     - Configuration: configuration.md
     - Dictionaries: dictionaries.md
-    - Vocabulary: vocabulary.md
     - Publication:
       - publish/index.md
       - Dataverse: publish/dataverse.md
