@@ -40,7 +40,7 @@ The dictionaries offered by default are: *people*, *funders*, *data producers*, 
 
 **3** - The web interface for entering metadata is entirely built on the basis of [definition files](../definitions/). 
 <a href="javaScript:;" class="extra-js extra-show-js">&nbsp;&nbsp; :octicons-chevron-down-16:</a><span class="extra-more extra-hide-more">
-The metadata is thus distributed according to the different sections chosen, each constituting a tab. Mandatory fields are marked with a red star and must be documented in order to be able to generate the metadata file (see <a href="../images/entry_fig.png" data-lightbox="fig1">screenshot 1</a> & <a href="../images/entry_fig2.png" data-lightbox="fig5">screenshot 2</a>). The entry of metadata governed by a controlled vocabulary (<i>dictionary, thesaurus or ontology</i>) is done by autocompletion. Once the mandatory fields (at least) and other recommended fields (the best) have been entered, the metadata file can be generated in JSON format.
+The metadata is thus distributed according to the different sections chosen, each constituting a tab. Mandatory fields are marked with a red star and must be documented in order to be able to generate the metadata file (see <a href="../images/entry_fig.png" data-lightbox="fig1">screenshot 1</a> & <a href="../images/entry_fig2.png" data-lightbox="fig5">screenshot 2</a>). The entry of metadata governed by a controlled vocabulary (<i>dictionary, thesaurus or ontology</i>) is done by autocompletion. Once the mandatory fields (at least) and other recommended fields (at best) have been entered, the metadata file can be generated in JSON format.
 </span><a href="javaScript:;" class="extra-js-2 extra-hide-js">&nbsp; :octicons-chevron-up-16: </a>
 
 **4** - The file generated in JSON format must be placed in the [storage space](../infrastructure) reserved for this purpose. 
@@ -68,7 +68,7 @@ Indeed, all the JSON metadata files are scanned and parsed according to a fixed 
 *[JSON]: JavaScript Object Notation : format used to represent structured information
 *[autocompletion]: feature in which an application predicts the rest of a word a user is typing
 
-
+[1]: https://www.inrae.fr/en
 [3]: https://en.wikipedia.org/wiki/Metadata
 [4]: https://en.wikipedia.org/wiki/Data_management_plan
 [5]: https://open-research-europe.ec.europa.eu/for-authors/data-guidelines

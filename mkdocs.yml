@@ -102,7 +102,6 @@ markdown_extensions:
 
 nav:
     - Home: index.md
-    - Presentation: presentation.md
     - Infrastructure: infrastructure.md
     - Installation: installation.md
     - Definition files:

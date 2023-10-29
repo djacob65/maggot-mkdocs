@@ -88,6 +88,7 @@ The file must have 3 columns with headers defined as follows:
 Below an example of Terminology documentation file (TSV)
 <center>
 <a href="../../images/config_doc_txt.png" data-lightbox="fig2"><img src="../../images/config_doc_txt.png" width="800px"></a>
+<a href="../../images/config_doc_txt_2.png" data-lightbox="fig2b"><img src="../../images/config_doc_txt_2.png" width="800px"></a>
 </center><br>
 
 <br>
