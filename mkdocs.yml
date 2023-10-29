@@ -7,7 +7,6 @@ docs_dir: docs/
 
 theme: 
   name: material
-#  custom_dir: material/
   highlightjs: true
   features:
 #    - navigation.tabs

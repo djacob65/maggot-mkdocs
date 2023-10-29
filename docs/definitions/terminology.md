@@ -1,5 +1,5 @@
 ---
-title: Terminology
+title: Maggot - Terminology
 summary: 
 authors:
     - Daniel Jacob
@@ -71,7 +71,7 @@ Below an example of Terminology definition file (TSV)
 
 Example of Maggot JSON file generated based on the same definition file
 
-* [Maggot JSON of the FRIM dataset][2]{:target="_blank"}
+* [Maggot JSON of the FRIM dataset][2]{:target="_blank"} and its corresponding [JSON-schema][3]{:target="_blank"}
 
 <br>
 
@@ -91,6 +91,10 @@ Below an example of Terminology documentation file (TSV)
 <a href="../../images/config_doc_txt_2.png" data-lightbox="fig2b"><img src="../../images/config_doc_txt_2.png" width="800px"></a>
 </center><br>
 
+Same example as above converted to HTML format using Markdown format
+
+* [Metadata Documentation](https://pmb-bordeaux.fr/maggot/doc/meta){:target="_blank"}
+
 <br>
 
 *[TSV]: Open text format representing tabular data as "Tab-Separated Values". Each row corresponds to a table row and the cells in a row are separated by a tab
@@ -101,4 +105,5 @@ Below an example of Terminology documentation file (TSV)
 
 [1]: https://github.com/inrae/pgd-mmdt/blob/main/web/js/autocomplete/
 [2]: https://pmb-bordeaux.fr/maggot/metadata/frim1?format=maggot
-[1]: https://github.com/inrae/pgd-mmdt/blob/main/web/cvlist/
+[3]: https://pmb-bordeaux.fr/maggot/conf/maggot-schema.json
+

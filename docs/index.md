@@ -10,14 +10,15 @@ some_url:
 <style>.md-typeset h1 {display: none;} .md-nav__item {font-size: medium}</style>
 
 ![](images/logo.png)
-<center><img src="images/overview.png" width="1000px"></center>
+<center>
+<h2 style="color: darkviolet;">An ecosystem for sharing metadata</h2>
+<img src="images/overview.png" width="1000px">
+</center>
 <br>
 
-<center><span style="font-size: 1.25em; font-weight: 400; letter-spacing: -.01em; line-height: 1.5; margin: 1.6em 0 0.8em; color: #337ab7;">Foster good data management, with "data sharing” in mind</span></center>
+### Foster good data management, with "data sharing” in mind
 
-<center>
-<p style="max-width: 50rem"> Sharing descriptive metadata is the first essential step towards the so-called “Open Data” approach. With this in mind, the Maggot tool was specially designed to allow users to easily add descriptive metadata to datasets produced within a collective (research unit, platform, multi-partner project, etc.) while fitting perfectly into a structuring data management plan. Indeed, this approach addresses the issues of data organization and documentation, data storage and metadata sharing within this same collective and beyond.</p>
-</center>
+Sharing descriptive [Metadata][3]{:target="_blank"} is the first essential step towards the so-called [Open Scientific Data][2]{:target="_blank"}. With this in mind, Maggot was specially designed to allow users to easily add descriptive metadata to datasets produced within a collective (research unit, platform, multi-partner project, etc.) by fitting perfectly into a data management plan. Indeed, Maggot responds to the issues of data organization and documentation, data storage and frictionless metadata sharing within this same collective and beyond.
 
 ----
 
@@ -85,6 +86,7 @@ Indeed, all the JSON metadata files are scanned and parsed according to a fixed 
 *[autocompletion]: feature in which an application predicts the rest of a word a user is typing
 
 [1]: https://www.inrae.fr/en
+[2]: https://en.wikipedia.org/wiki/Open_scientific_data
 [3]: https://en.wikipedia.org/wiki/Metadata
 [4]: https://en.wikipedia.org/wiki/Data_management_plan
 [5]: https://open-research-europe.ec.europa.eu/for-authors/data-guidelines

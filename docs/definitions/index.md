@@ -1,5 +1,5 @@
 ---
-title: Terminology Definition File
+title: Maggot - Definition Files
 summary: 
 authors:
     - Daniel Jacob
