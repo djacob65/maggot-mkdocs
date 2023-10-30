@@ -21,6 +21,7 @@ jobs:
           path: .cache
           restore-keys: |
             mkdocs-material-
+      - run: pip install mkdocs
       - run: pip install mkdocs-material
       - run: pip install mkdocs-material-extensions
       - run: pip install mkdocs-macros-plugin
