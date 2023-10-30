@@ -8,8 +8,20 @@ permissions:
   contents: write
 jobs:
   deploy:
+    permissions:
+      pages: write      # to deploy to Pages
+      id-token: write   # to verify the deployment originates from an appropriate source
+
+    # Deploy to the github-pages environment
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
     runs-on: ubuntu-latest
+
     steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v4
         with:
@@ -21,5 +33,14 @@ jobs:
           path: .cache
           restore-keys: |
             mkdocs-material-
-      - run: pip install mkdocs-material 
+      - run: pip install mkdocs-material
+      - run: pip install mkdocs-material-extensions
+      - run: pip install mkdocs-macros-plugin
+      - run: pip install mkdocs-markdownextradata-plugin
+      - run: pip install mkdocs-bootswatch
+      - run: pip install mkdocs-pdf-with-js-plugin
+      - run: pip install mkdocs-section-index
+      - run: pip install mkdocs-tooltips
+      - run: pip install mkdocs-with-pdf
+      - run: pip install pymdown-extensions
       - run: mkdocs gh-deploy --force
