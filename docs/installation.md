@@ -11,7 +11,7 @@ some_url:
 
 ### Install on your linux computer or linux / unix server
 
-Requirements: The installation must be carried out on a (virtual) machine with  a recent Linux OS that support [Docker][4]{:target="_blank"} (see [Infrastructure](../Infrastructure))
+Requirements: The installation must be carried out on a (virtual) machine with  a recent Linux OS that support [Docker][4]{:target="_blank"} (see [Infrastructure](../infrastructure))
 
 <br>
 
@@ -124,6 +124,18 @@ sh ./run <option>
 **_Note:_**  _See how to do proceed for [configuration steps](../configuration)._
 </center>
 
+-----
+
+### File Browser
+
+You can provide access to your data via a [file browser][25]{:target="_blank"}. This application must be [installed separately][26]{:target="_blank"} but can be connected to Maggot by specifying the corresponding URL in the [configuration file][22]{:target="_blank"}. Users and their rights are managed in the filebrowser application. Likewise, we can also <a href="../images/filebrowser_fig2.png" data-lightbox="fig2">create links to the data without a password</a>. Its links can be usefully specified as external resources in the metadata managed by Maggot.
+
+<center>
+<a href="../images/filebrowser_fig1.png" data-lightbox="fig10"><img src="../images/filebrowser_fig1.png" width="800px"></a><br>
+ _See how to do install in [github][26]{:target="_blank"}._
+</center>
+
+
 <br>
 
 [1]: https://en.wikipedia.org/wiki/Virtual_machine
@@ -148,3 +160,6 @@ sh ./run <option>
 [22]: https://github.com/inrae/pgd-mmdt/blob/main/web/inc/config/config.inc
 [23]: https://github.com/inrae/pgd-mmdt/blob/main/run
 [24]: https://github.com/inrae/pgd-mmdt/blob/main/web/inc/config/mongodb.inc
+
+[25]: https://filebrowser.org/
+[26]: https://github.com/djacob65/maggot-fb

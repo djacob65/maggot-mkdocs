@@ -52,7 +52,7 @@ get_dictionary_values('people', merge=[0,' ',1])
 <a href="../images/dico1.png" data-lightbox="fig1"><img src="../images/dico1.png" width="600px"></a>
 </center>
 
-* **Note**: It is possible to edit dictionaries, by adding an entry for example, and at the same time be able to immediately find this new entry in the metadata entry in the Maggot tool. Indeed each dictionary is reloaded into memory as soon as the corresponding input box is clicked.
+* **Note**: It is possible to edit dictionaries, by adding an entry for example, and at the same time be able to immediately find this new entry in the metadata entry in the Maggot tool. Indeed each dictionary is reloaded into memory as soon as the corresponding input box is clicked. See <a href="../images/dico6.png" data-lightbox="fig6">an illustration</a>.
 
 <br>
 
