@@ -1,12 +1,16 @@
-### Metadata Management Tool for Data Storage Spaces
+### Documentation of the Maggot web application
 
-* See Documentation : https://inrae.github.io/pgd-mmdt/
+* generated with MkDocs - Material
+* using GitHub Actions for automating the deployment
+* site pages : gh-pages branch
+
+
+Site web : https://djacob65.github.io/maggot-mkdocs/
 
 ------
 
 ### Funded by:
 
-* INRAE UMR 1202 BIOGECO, Biodiversité Gènes et Communautés
 * INRAE UMR 1332 BFP, Biologie du Fruit & Pathologie
 
 ### License
