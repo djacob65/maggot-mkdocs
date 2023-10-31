@@ -18,7 +18,7 @@ some_url:
 
 ### Foster good data management, with "data sharing” in mind
 
-Sharing descriptive [Metadata][3]{:target="_blank"} is the first essential step towards the so-called [Open Scientific Data][2]{:target="_blank"}. With this in mind, Maggot was specially designed to allow users to easily add descriptive metadata to datasets produced within a collective (research unit, platform, multi-partner project, etc.) by fitting perfectly into a data management plan. Indeed, Maggot responds to the issues of data organization and documentation, data storage and frictionless metadata sharing within this same collective and beyond.
+Sharing descriptive [Metadata][3]{:target="_blank"} is the first essential step towards the so-called [Open Scientific Data][2]{:target="_blank"}. With this in mind, Maggot was specifically designed to annotate datasets by creating a metadata file to attach to the storage space. Indeed, it allows users to easily add descriptive metadata to datasets produced within a collective of people (research unit, platform, multi-partner project, etc.). This approach fits perfectly into a data management plan as it addresses the issues of data organization and documentation, data storage and frictionless metadata sharing within this same collective and beyond.
 
 ----
 
