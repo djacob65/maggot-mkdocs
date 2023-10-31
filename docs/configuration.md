@@ -11,7 +11,7 @@ some_url:
 
 ### Terminology configuration
 
-A single file (***web/conf/config_terms.txt***) contains all the [terminology](../definitions/terminology). The input and search interfaces are completely generated from this definition file, thus defining each of the fields, their input type (*checkbox*, *dropbox*, *textbox*, ...) and the associated controlled vocabulary (ontology and thesaurus by autocompletion, drop-down list according to a list of fixed terms). This is why a configuration and conversion step into JSON[^1] format is essential in order to be able to configure all the other modules (example: creation of the [MongoDB][1]{:target="_blank"} database schema when starting the application before filling it).
+A single file (***web/conf/config_terms.txt***) contains all the [terminology](../definitions/terminology/). The input and search interfaces are completely generated from this definition file, thus defining each of the fields, their input type (*checkbox*, *dropbox*, *textbox*, ...) and the associated controlled vocabulary (ontology and thesaurus by autocompletion, drop-down list according to a list of fixed terms). This is why a configuration and conversion step into JSON[^1] format is essential in order to be able to configure all the other modules (example: creation of the [MongoDB][1]{:target="_blank"} database schema when starting the application before filling it).
 
 <center>
 <a href="../images/config.png" data-lightbox="fig0"><img src="../images/config.png" width="800px"></a>

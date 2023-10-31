@@ -4,6 +4,8 @@ site_author: Daniel Jacob
 copyright: INRAE, 2023
 docs_dir: docs/
 
+repo_name: GitHub
+remote_branch: gh-pages
 
 theme: 
   name: material
@@ -34,6 +36,10 @@ theme:
       accent: lime
 
 #favicon: assets/favicon.png
+
+extra:
+  version:
+    default: stable 
 
 extra_javascript:
   - js/jquery-2.1.1.min.js
@@ -76,8 +82,8 @@ markdown_extensions:
   - pymdownx.critic
   - pymdownx.details
   - pymdownx.emoji:
-      emoji_index: !!python/name:materialx.emoji.twemoji
-      emoji_generator: !!python/name:materialx.emoji.to_svg
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
   - pymdownx.inlinehilite
   - pymdownx.keys
   - pymdownx.magiclink:
@@ -97,6 +103,11 @@ markdown_extensions:
   - pymdownx.tasklist:
       custom_checkbox: true
   - pymdownx.tilde
+
+validation:
+  omitted_files: ignore
+  absolute_links: warn
+  unrecognized_links: ignore
 
 
 nav:

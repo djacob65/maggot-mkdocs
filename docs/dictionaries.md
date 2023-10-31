@@ -70,7 +70,7 @@ get_dictionary_values('people', merge=[0,' ',1])
 <a href="../images/dico4.png" data-lightbox="fig4"><img src="../images/dico4.png" width="400px"></a>
 </center><br>
 
-* **Vocabulary** : Use this dictionary for mixing thesauri and ontologies in order to better target the entire controlled vocabulary of its field of application. Only the vocabulary is mandatory, the URL linked to an ontology or a thesaurus is optional. See [Vocabulary](../vocabulary) section to learn the extent of the possibilities concerning vocabulary in Maggot.
+* **Vocabulary** : Use this dictionary for mixing thesauri and ontologies in order to better target the entire controlled vocabulary of its field of application. Only the vocabulary is mandatory, the URL linked to an ontology or a thesaurus is optional. See [Vocabulary](../definitions/vocabulary/) section to learn the extent of the possibilities concerning vocabulary in Maggot.
     * **_Note_** : can be duplicated but while keeping its format (same columns and same layout).
 <center>
 <a href="../images/dico5.png" data-lightbox="fig5"><img src="../images/dico5.png" width="400px"></a>
