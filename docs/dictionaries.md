@@ -13,12 +13,10 @@ some_url:
 
 * The use of dictionaries has no other purpose to facilitate the entry of metadata, entry which can be long and repetitive in generalist data warehouses (such as repository based on Dataverse).
 * Dictionaries allow you to record multiple information necessary to define an entity, such as the names of people or even the funders. These information, once entered and saved in a file called a dictionary, can be subsequently associated with the corresponding entity. 
-* The dictionaries offered by default are: people, funders, data producers, as well as a vocabulary dictionary allowing you to mix ontologies and thesauri from several sources.
-     * The following dictionaries : people (***people***), funders (***grant***) and data producers (***producer***) must not be changed in their format nor in their name because they are strongly linked with their internal use. 
-	 * On the other hand, the vocabulary dictionary (***vocabulary***) can be duplicated but while keeping its format (same columns and same layout).
+* The dictionaries offered by default are: people (***people***), funders (***grant***), data producers (***producer***), as well as a vocabulary dictionary (***vocabulary***) allowing you to mix ontologies and thesauri from several sources.
 * To add a new dictionary, simply create a directory under *[web/cvlist][10]{:target="_blank"}* then putting the files corresponding to the dictionary inside. Dictionaries will be automatically found by browsing this directory.
-* Dictionary files are made using a simple spreadsheet then exported in TSV[^1] format.
-* Dictionaries are accessed through secure access limited to administrators allowing their editing. The login is by default 'admin'. You can add another account for consultation only using the following command: 
+* Dictionary files are made using a simple spreadsheet then exported in TSV format.
+* Dictionaries are accessed through secure access limited to administrators allowing their editing. The login is by default '***admin***'. You can add another account for consultation only using the following command: 
 ```
 sh ./run passwd <user>
 ```
@@ -26,7 +24,7 @@ sh ./run passwd <user>
 <br>
 
 #### The people dictionary
-* **_Note_** : must not be changed in its format nor in its name
+* **_Note_** : must not be changed in its format nor in its name.
 * Like any dictionary, there must be 3 files (see below). Please note that the names of these files must always contain the name of the dictionary, i.e. same as the directory.
 <center>
 <a href="../images/dico0.png" data-lightbox="fig0"><img src="../images/dico0.png" width="600px"></a>
@@ -38,7 +36,7 @@ sh ./run passwd <user>
 <a href="../images/dico2.png" data-lightbox="fig2"><img src="../images/dico2.png" width="500px"></a>
 </center><br>
 
-* Thus, we know that the people dictionary must contain 5 columns (last name, first name, institution, ORCID number and email address) and that some fields are mandatory (last name, first name, institution) and others optional (ORCID number, email address).
+* Thus, we know that the people dictionary must contain 5 columns (last name, first name, institution, [ORCID][5]{:target="_blank"} number and email address) and that some fields are mandatory (last name, first name, institution) and others optional (ORCID number, email address).
 * Each of the fields must respect a format specified by a [regular expression][1]{:target="_blank"} in order to be accepted as valid.
 * Optionally, you can connect an [web API][2]{:target="_blank"} to each of the fields in order to make an entry by autocompletion from a remote register. Currently only ROR ([Research Organization Registry][3]{:target="_blank"}) web API is possible but the mechanism is in place for new extensions.
 * The third file, a very simple script written in [JavaScript][4]{:target="_blank"}, defines the way to retrieve the list of names (here by containing the first and last name). Note that the name of the variable must always be identical to that of the dictionary.
@@ -59,13 +57,13 @@ get_dictionary_values('people', merge=[0,' ',1])
 #### Other dictionaries
 
 * **Funders** : The dictionary of the funders allows you to define the funding agency, project ID and its corresponding URL.
-    * **_Note_** : must not be changed in its format nor in its name
+    * **_Note_** : can be renamed but while keeping its format (same columns and same layout).
 <center>
 <a href="../images/dico3.png" data-lightbox="fig3"><img src="../images/dico3.png" width="400px"></a>
 </center><br>
 
 * **Producers** : The dictionary of the data producers allows you to define their Institute and  project ID and their corresponding URL. Optionally, you can add the URL of the logo.
-    * **_Note_** : must not be changed in its format nor in its name
+    * **_Note_** : can be renamed but while keeping its format (same columns and same layout).
 <center>
 <a href="../images/dico4.png" data-lightbox="fig4"><img src="../images/dico4.png" width="400px"></a>
 </center><br>
@@ -78,11 +76,12 @@ get_dictionary_values('people', merge=[0,' ',1])
 
 <br>
 
-[^1]: *TSV*: open text format representing tabular data as "tab-separated values". Each row corresponds to a table row and the cells in a row are separated by a tab.
+*[TSV]: Open text format representing tabular data as "Tab-Separated Values". Each row corresponds to a table row and the cells in a row are separated by a tab
 
 [1]: https://www.w3schools.com/js/js_regexp.asp
 [2]: https://en.wikipedia.org/wiki/Web_API
 [3]: https://ror.org/
 [4]: https://en.wikipedia.org/wiki/JavaScript
+[5]: https://info.orcid.org/researchers/
 
 [10]: https://github.com/inrae/pgd-mmdt/tree/main/web/cvlist
