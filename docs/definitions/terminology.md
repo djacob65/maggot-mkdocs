@@ -77,7 +77,12 @@ Example of Maggot JSON file generated based on the same definition file
 
 ### Structure of the Terminology documentation file (TSV)
 
-The documentation definition fileis used to have online help for each field (small icon placed next to each label on the form). So it should only be modified when a field is added or deleted, or moved to another section.
+The documentation definition file is used to have online help for each field (small icon placed next to each label on the form). So it should only be modified when a field is added or deleted, or moved to another section. This file will be used then to generate the online metadata documentation according to the figure below (See [Configuration](../../configuration) to find out how to carry out this transformation).
+
+<center>
+<a href="../../images/docwf_fig.png" data-lightbox="fig2"><img src="../../images/docwf_fig.png" width="600px"></a>
+</center>
+
 
 The file must have 3 columns with headers defined as follows:
 
