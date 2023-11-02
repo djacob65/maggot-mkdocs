@@ -20,9 +20,9 @@ hide: toc
 
 * Each time there is a change in these two definition files, it is necessary to [convert](../../configuration) them so that they are taken into account by the application.
 
-Terminology is the set of terms used to define the metadata of a dataset. A single file (**_web/conf/config_terms.txt_**) contains all the terminology. The input and search interfaces are completely generated from this definition file, thus defining each of the fields, their input type (checkbox, dropbox, textbox, ...) and the associated controlled vocabulary (ontology and thesaurus by autocompletion, drop-down list according to a list of fixed terms).  It is therefore necessary to create and fill it, according to the following scheme:
+Terminology is the set of terms used to define the metadata of a dataset. A single file (**_web/conf/config_terms.txt_**) contains all the terminology. The input and search interfaces (e.g <a href="../../images/entry_fig2.png" data-lightbox="fig5">screenshot</a>) are completely generated from this definition file, thus defining each of the fields, their input type (checkbox, dropbox, textbox, ...) and the associated controlled vocabulary (ontology and thesaurus by autocompletion, drop-down list according to a list of fixed terms).  It is therefore necessary to create and fill it, according to the following scheme:
 
-* Terminology is organised in several sections. By default 6 sections are proposed:
+* Terminology is organised in several sections. By default 6 sections are proposed, but you can redefine them as you wish:
 
     - ***DEFINITION*** : section for defining the short name of projet.
     - ***STATUS*** : section to indicate the status of the dataset and its retention period
