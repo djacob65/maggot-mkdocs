@@ -24,12 +24,12 @@ Terminology is the set of terms used to define the metadata of a dataset. A sing
 
 * Terminology is organised in several sections. By default 6 sections are proposed, but you can redefine them as you wish:
 
-    - ***DEFINITION*** : section for defining the short name of projet.
-    - ***STATUS*** : section to indicate the status of the dataset and its retention period
-    - ***MANAGEMENT*** : section for entering the metadata relating to the management of the dataset (access rights, scientific and technical management, end-users, contracts, valorisation)
-    - ***DESCRIPTORS*** : section for entering metadata about the (biological) description of the dataset and the type of data it contains.
-    - ***OTHER*** : section allowing to enter miscellious information (protocols, comments, issues, ...)
-    - ***RESOURCES*** : section for entering metadata about some resources, i.e description of data included in the dataset. This section does not require any configuration _a priori_, it is added _de facto_.
+    - ***DEFINITION*** : Section for describing shortly the dataset. 
+    - ***STATUS*** : Section for defining the status of the dataset, associated rights, dates, etc.
+    - ***MANAGEMENT*** : Section for assigning names of people or organizations who participated in the production of data and according to the type of participation.
+    - ***DESCRIPTORS*** : Section for defining elements characterizing the data themselves and certain experimental conditions for obtaining them.
+    - ***OTHER*** : Section for entering miscellious information (protocols, comments, issues, ...)
+    - ***RESOURCES*** : Section for defining metadata about all the resources you want, i.e both external (links) and internal (data files on the storage space) resources. This section does not require any configuration _a priori_, it is added _de facto_.
 
 
 * For each section, fields are then defined. These fields can be defined according to the way they will be entered via the web interface. There are **6 different types of input**: check boxes (**_checkbox_**), drop lists (**_dropbox_**), single-line text boxes (**_textbox_**), single-line text boxes with an additional box for multiple selection from a catalog of terms (**_multiselect_**), date picker (**datebox**) and multi-line text boxes (**_areabox_**).
@@ -57,7 +57,7 @@ The file must have 9 columns with headers defined as follows:
      * **width=_NNNpx_** (***textbox***, ***dropbox***, ***datebox***) : allows you to specify the width of the box. Usefull if you want put several fields in the same line. See note 1 below.
      * **row=_NN_** and **cols=_NN_** (***areabox***) : allows you to specify the row and column size of the textarea.
 * column 8 - **Label** : Labels corresponding to the fields that will appear in the web interface
-* column 9 - **Predefined terms** : for fields defined with a type equal to 'checkbox' or 'dropbox', one can give a list of terms separated by a comma.
+* column 9 - **Predefined terms** : for fields defined with a type equal to ***checkbox*** or ***dropbox***, one can give a list of terms separated by a comma.
 
 * **Notes**
 
