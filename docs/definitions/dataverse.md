@@ -9,6 +9,10 @@ some_url:
 
 <style>.md-typeset h1 {display: none;} .md-nav__item {font-size: medium}</style>
 
+<img src="../../images/dataverse_logo.png" width="250px">
+
+Open source research data repository software, [approved by Europe][4]{:target="_blank"}.
+
 ### Dataverse definition File
 
 This definition file will allow Maggot to automatically export the dataset into a data repository based on [Dataverse][1]{:target="_blank"}. The approach consists of starting from the Maggot metadata file in JSON format and transforming it into another JSON format compatible with Dataverse.
@@ -37,3 +41,4 @@ Example of Dataverse JSON file generated based on the definition file itself giv
 [1]: https://dataverse.org/
 [2]: https://guides.dataverse.org/en/latest/api/native-api.html
 [3]: https://pmb-bordeaux.fr/maggot/metadata/frim1?format=dataverse
+[4]: https://open-research-europe.ec.europa.eu/for-authors/data-guidelines#approvedrepositories
