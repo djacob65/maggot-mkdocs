@@ -29,7 +29,7 @@ cd pgd-mmdt
 
 MAGGOT uses 3 Docker images for 3 distinct services:
 
-* **pgd-mmdt-db** which hosts the mongoDB database
+* **pgd-mmdt-db** which hosts the [MongoDB][17]{:target="_blank"} database
 * **pgd-mmdt-scan** which scans the data and updates the contents of the database and the web interface
 * **pgd-mmdt-web** which hosts the web server and the web interface pages
 
@@ -70,7 +70,7 @@ sh ./run <option>
 * ***start*** : _1_) Launch the 3 services by creating the Docker containers corresponding to the Docker images; _2_) Create also the MongoDB volume.
 * ***stop*** :  _1_) Remove all the 3 Docker containers; _2_) Remove the MongoDB volume.
 * ***initdb*** : Create and initialize the Mongo collection
-* ***scan*** : Scan the data and update the contents of the database and the web interface
+* ***scan*** : Scan the data  according to a fixed period ([30 min][18]{:target="_blank"}) and update the contents of the database and the web interface
 * ***fullstart*** : Perform the 3 actions ***start***, ***initdb*** and ***scan***
 * ***restart*** : Perform the 2 actions ***stop*** then ***fullstart***
 * ***ps*** : Check that all containers are running correctly
@@ -154,6 +154,8 @@ You can provide access to your data via a [file browser][25]{:target="_blank"}. 
 [14]: https://inrae.github.io/jupyterhub-vm/
 [15]: https://ucr-research-computing.github.io/Knowledge_Base/how_to_mount_google_drive.html
 [16]: https://www.youtube.com/watch?v=CaDzYUSdVn8&ab_channel=URTechDotCa
+[17]: https://www.mongodb.com/basics
+[18]: https://github.com/inrae/pgd-mmdt/blob/main/dockerscanpart/scripts/pgd-cron
 
 [20]: https://github.com/inrae/pgd-mmdt/blob/main/dockerdbpart/initialisation/setupdb-js.template
 [21]: https://github.com/inrae/pgd-mmdt/blob/main/dockerscanpart/scripts/config.py

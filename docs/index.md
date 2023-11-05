@@ -24,6 +24,8 @@ Sharing descriptive [Metadata][3]{:target="_blank"} is the first essential step 
 
 ### Main features of Maggot
 
+The main functionalities of Maggot were established according to a well-defined need (See [Background](./about/#background)).
+
 1. Documente with [Metadata][3]{:target="_blank"} your datasets produced within a collective of people, thus making it possible :
 	* to answer <a href="./images/DMP_fig.png" data-lightbox="fig8">certain questions</a> of the [Data Management Plan (DMP)][4]{:target="_blank"} concerning the organization, documentation, storage and sharing of data in the data storage space, 
 	* to meet certain data and metadata requirements, listed for example by the [Open Research Europe][5]{:target="_blank"} in accordance with the [FAIR principles][7]{:target="_blank"}.
@@ -43,12 +45,12 @@ _See a short [Presentation][11]{:target="_blank"} and [Poster][12]{:target="_bla
 
 **1** - First you must define all the [metadata][3]{:target="_blank"} that will be used to describe your datasets.
 <a href="javaScript:;" class="extra-js extra-show-js">&nbsp;&nbsp; :octicons-chevron-down-16:</a><span class="extra-more extra-hide-more">
-It is possible to define all the metadata using a single file (in TSV format, therefore using a spreadsheet). The metadata proposed by default was mainly established according to the [DDI][9]{:target="_blank"} (Data Documentation Initiative) [metadata schema][10]{:target="_blank"}. This schema also largely corresponds to that adopted by the [Dataverse][16]{:target="_blank"} software. This is a primordial step because both input and search interfaces are completely generated from these definition files, defining in this way each of the fields, their input type (*checkbox*, *dropbox*, *textbox*, ...) and also the associated Controlled Vocabulary ([ontology][18]{:target="_blank"} and [thesaurus][19]{:target="_blank"} by autocompletion, drop-down list according to a list of fixed terms). See the [Terminology Definition](./definitions/terminology.md) section.
+It is possible to define all the metadata using a single file (in TSV format, therefore using a spreadsheet). The metadata proposed by default was mainly established according to the [DDI][9]{:target="_blank"} (Data Documentation Initiative) [metadata schema][10]{:target="_blank"}. This schema also largely corresponds to that adopted by the [Dataverse][16]{:target="_blank"} software. This is a primordial step because both input and search interfaces are completely generated from these definition files, defining in this way each of the fields, their <a href="../images/terminology_types.png" data-lightbox="fig0">input type</a> and also the associated Controlled Vocabulary ([ontology][18]{:target="_blank"} and [thesaurus][19]{:target="_blank"} by autocompletion, drop-down list according to a list of fixed terms). See the [Terminology Definition](./definitions/terminology.md) section.
 </span><a href="javaScript:;" class="extra-js-2 extra-hide-js">&nbsp; :octicons-chevron-up-16: </a>
 
 **2** - Entering metadata will be greatly facilitated by the use of [dictionaries](./dictionaries.md).
 <a href="javaScript:;" class="extra-js extra-show-js">&nbsp;&nbsp; :octicons-chevron-down-16:</a><span class="extra-more extra-hide-more">
-The dictionaries offered by default are: *people*, *funders*, *data producers*, as well as a *vocabulary* dictionary allowing you to mix ontologies and thesauri from several sources. Each of these dictionaries allows you to enter a name or a main title by autocompletion. Then the information associated with it will be added during export (data deposit, JSON-LD format, OAI-PMH).
+The dictionaries offered by default are: <i><a href="../images/dico1.png" data-lightbox="fig1">people</a></i>, *funders*, *data producers*, as well as a *vocabulary* dictionary allowing you to mix ontologies and thesauri from several sources. Each of these dictionaries allows users, by entering a name by autocompletion, to associate information which will then be added when exporting the metadata either to a remote repository, or for harvesting the metadata. Thus this information, once entered into a dictionary, will not need to be re-entered again.
 </span><a href="javaScript:;" class="extra-js-2 extra-hide-js">&nbsp; :octicons-chevron-up-16: </a>
 
 **3** - The web interface for entering metadata is entirely built on the basis of [definition files](./definitions/index.md). 
@@ -58,12 +60,12 @@ The metadata is thus distributed according to the different sections chosen, eac
 
 **4** - The file generated in JSON format must be placed in the [storage space](./infrastructure.md) reserved for this purpose. 
 <a href="javaScript:;" class="extra-js extra-show-js">&nbsp;&nbsp; :octicons-chevron-down-16:</a><span class="extra-more extra-hide-more">
-The role played by this metadata file can be seen as a README file adapted for machines, but also readable by humans. With an internal structure, it offers coherence and consistency of information that a simple README file with a completely free and therefore unstructured text format does not allow. Furthermore, the central idea is to use the storage space as a local data repository, so that the metadata should go to the data and not the other way around. If the <a href="./images/filebrowser_fig1.png" data-lightbox="fig8">filebrowser</a> application is installed, then you can directly access the data space according to your access rights. See on [github][15]{:target="_blank"}.
+The role played by this metadata file can be seen as a README file adapted for machines, but also readable by humans. With an internal structure, it offers coherence and consistency of information that a simple README file with a completely free and therefore unstructured text format does not allow. Furthermore, the central idea is to use the storage space as a local data repository, so that the metadata should go to the data and not the other way around.
 </span><a href="javaScript:;" class="extra-js-2 extra-hide-js">&nbsp; :octicons-chevron-up-16: </a>
 
 **5** - A search of the datasets can thus be carried out on the basis of the metadata. 
 <a href="javaScript:;" class="extra-js extra-show-js">&nbsp;&nbsp; :octicons-chevron-down-16:</a><span class="extra-more extra-hide-more">
-Indeed, all the JSON metadata files are scanned and parsed according to a fixed period ([30 min][20]{:target="_blank"}) then loaded into a [MongoDB][21]{:target="_blank"} database. This allows you to perform searches based on predefined metadata. The search form, in its compact shape on the left of the screen, is almost the same as the entry form (see a <a href="./images/search_fig.png" data-lightbox="fig6">screenshot</a>). Depending on the search criteria, a list of data sets is provided, with for each of them a link pointing to the detailed sheet.
+Indeed, all the JSON metadata files are scanned and parsed according to a fixed period (30 min) then loaded into a database. This allows you to perform searches based on predefined metadata. The search form, in a compact shape, is almost the same as the entry form (see a <a href="./images/search_fig.png" data-lightbox="fig6">screenshot</a>). Depending on the search criteria, a list of data sets is provided, with for each of them a link pointing to the detailed sheet.
 </span><a href="javaScript:;" class="extra-js-2 extra-hide-js">&nbsp; :octicons-chevron-up-16: </a>
 
 **6** - The detailed metadata sheet provides all the metadata divided by section. 
@@ -104,7 +106,6 @@ Indeed, all the JSON metadata files are scanned and parsed according to a fixed 
 [17]: https://www.openaire.eu/zenodo-guide
 [18]: https://en.wikipedia.org/wiki/Ontology_(information_science)
 [19]: https://en.wikipedia.org/wiki/Thesaurus_(information_retrieval)
-[20]: https://github.com/inrae/pgd-mmdt/blob/main/dockerscanpart/scripts/pgd-cron
-[21]: https://www.mongodb.com/basics
+
 
 
