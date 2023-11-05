@@ -25,6 +25,8 @@ Example of Zenodo JSON file generated based on the definition file itself given 
 
    * [Zenodo JSON of the FRIM dataset][3]{:target="_blank"}
 
+<br><br>
+
 [1]: https://www.openaire.eu/zenodo-guide
 [2]: https://developers.zenodo.org/#rest-api
 [3]: https://pmb-bordeaux.fr/maggot/metadata/frim1?format=zenodo

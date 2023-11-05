@@ -9,9 +9,16 @@ some_url:
 
 <style>.md-typeset h1 {display: none;} .md-nav__item {font-size: medium}</style>
 
+<img src="../../images/jsonld_fig0.png" width="600px">
+
 ### JSON-LD definition File
 
 This definition file will allow harvesters to collect structured metadata based on a semantic schema, i.e the fields themselves and not just their content can be associated with a semantic definition (ontology for example) which will then facilitate the link between the metadata and therefore the data ([JSON-LD][1]{:target="_blank"}). The chosen semantic schema is based on several metadata schemas.
+
+The full workflow to "climb the Link Open Data mountain" is resumed by the figure below :
+<center>
+<a href="../../images/jsonld_fig1.png" data-lightbox="fig0"><img src="../../images/jsonld_fig1.png" width="600px"></a>
+</center>
 
 Metadata schemas used to build the model proposed by default:
 
@@ -33,9 +40,7 @@ Example of JSON-LD file generated based on the definition file itself given as a
 
    * [JSON-LD file of the FRIM dataset][8]{:target="_blank"}
 
-<br>
-
-<a href="../../images/jsonld_fig1.png" data-lightbox="fig0"><img src="../../images/jsonld_fig1.png" width="800px"></a>
+<br><br>
 
 [1]: https://en.wikipedia.org/wiki/JSON-LD
 [2]: https://schema.org/Dataset

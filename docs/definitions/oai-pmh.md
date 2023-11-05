@@ -9,7 +9,7 @@ some_url:
 
 <style>.md-typeset h1 {display: none;} .md-nav__item {font-size: medium}</style>
 
-<a href="../../images/oai_fig1.png" data-lightbox="fig0"><img src="../../images/oai_fig1.png" width="600px"></a>
+<img src="../../images/oai_fig1.png" width="500px">
 
 [OAI-PMH][1]{:target="_blank"} is a protocol developed for [harvesting metadata][6]{:target="_blank"} descriptions of records in an archive so that services can be built using metadata from many archives.
 
@@ -35,6 +35,8 @@ Another example of OAI-PMH definition file (TSV) with identifers & vocabulary ma
 <center>
 <a href="../../images/oai_conf2.png" data-lightbox="conf"><img src="../../images/oai_conf2.png" width="600px"></a>
 </center>
+
+<br><br>
 
 [1]: https://en.wikipedia.org/wiki/Open_Archives_Initiative_Protocol_for_Metadata_Harvesting
 [2]: https://www.openarchives.org/OAI/openarchivesprotocol.html
