@@ -13,35 +13,38 @@ hide: toc
 
 ### Definition of terminology
 
-* There are two configuration (alias definition) files to set up.
+There are two definition files to set up.
 
-    * **The terminology definition file** (**_config_terms.txt_**) serving to describe all terminology used to define the metadata of a dataset.
-    * **The terminology documentation file** (**_config_doc.txt_**) serving to documente all terminology definitions.
+* **The terminology definition file** (**_config_terms.txt_**) serving to describe all terminology used to define the metadata of a dataset.
+* **The terminology documentation file** (**_config_doc.txt_**) serving to documente all terminology definitions.
 
-* Each time there is a change in these two definition files, it is necessary to [convert](../../configuration) them so that they are taken into account by the application.
+Each time there is a change in these two definition files, it is necessary to [convert](../../configuration) them so that they are taken into account by the application.
 
-Terminology is the set of terms used to define the metadata of a dataset. A single file (**_web/conf/config_terms.txt_**) contains all the terminology. The input and search interfaces (e.g <a href="../../images/entry_fig2.png" data-lightbox="fig5">screenshot</a>) are completely generated from this definition file, thus defining each of the fields, their input type (checkbox, dropbox, textbox, ...) and the associated controlled vocabulary (ontology and thesaurus by autocompletion, drop-down list according to a list of fixed terms).  It is therefore necessary to create and fill it, according to the following scheme:
+Terminology is the set of terms used to define the metadata of a dataset. A single file (**_web/conf/config_terms.txt_**) contains all the terminology. The input and search interfaces (e.g <a href="../../images/entry_fig2.png" data-lightbox="fig5">screenshot</a>) are completely generated from this definition file, thus defining ***i)*** each of the fields, their input type (checkbox, dropbox, textbox, ...) and ***ii)*** the associated controlled vocabulary (ontology and thesaurus by autocompletion, drop-down list according to a list of fixed terms).
 
-* Terminology is organised in several sections. By default 6 sections are proposed, but you can redefine them as you wish:
+The [metadata schema][4]{:target="_blank"} proposed by defaut is mainly established according to the [DDI][5]{:target="_blank"} (Data Documentation Initiative) schema that also corresponds to that adopted by the [Dataverse][6]{:target="_blank"} software.
 
-    - ***DEFINITION*** : Section for describing shortly the dataset. 
-    - ***STATUS*** : Section for defining the status of the dataset, associated rights, dates, etc.
-    - ***MANAGEMENT*** : Section for assigning names of people or organizations who participated in the production of data and according to the type of participation.
-    - ***DESCRIPTORS*** : Section for defining elements characterizing the data themselves and certain experimental conditions for obtaining them.
-    - ***OTHER*** : Section for entering miscellious information (protocols, comments, issues, ...)
-    - ***RESOURCES*** : Section for defining metadata about all the resources you want, i.e both external (links) and internal (data files on the storage space) resources. This section does not require any configuration _a priori_, it is added _de facto_.
+Terminology is organised in several sections. By default 6 sections are proposed, but you can redefine them as you wish:
+
+- ***DEFINITION*** : Section for describing shortly the dataset. 
+- ***STATUS*** : Section for defining the status of the dataset, associated rights, dates, etc.
+- ***MANAGEMENT*** : Section for assigning names of people or organizations who participated in the production of data and according to the type of participation.
+- ***DESCRIPTORS*** : Section for defining elements characterizing the data themselves and certain experimental conditions for obtaining them.
+- ***OTHER*** : Section for entering miscellious information (protocols, comments, issues, ...)
+- ***RESOURCES*** : Section for defining metadata about all the resources you want, i.e both external (links) and internal (data files on the storage space) resources. This section does not require any configuration _a priori_, it is added _de facto_.
 
 
-* For each section, fields are then defined. These fields can be defined according to the way they will be entered via the web interface. There are **6 different types of input**: check boxes (**_checkbox_**), drop lists (**_dropbox_**), single-line text boxes (**_textbox_**), single-line text boxes with an additional box for multiple selection from a catalog of terms (**_multiselect_**), date picker (**datebox**) and multi-line text boxes (**_areabox_**).
+For each section, fields are then defined. These fields can be defined according to the way they will be entered via the web interface. There are **6 different types of input**: check boxes (**_checkbox_**), drop lists (**_dropbox_**), single-line text boxes (**_textbox_**), single-line text boxes with an additional box for multiple selection from a catalog of terms (**_multiselect_**), date picker (**datebox**) and multi-line text boxes (**_areabox_**).
 
 <center>
 <a href="../../images/terminology_types.png" data-lightbox="fig0"><img src="../../images/terminology_types.png" width="600px"></a>
 </center>
 
-* For two types (**_checkbox_** and **_dropbox_**), it is possible to define the values to be selected (predefined terms).
+For two types (**_checkbox_** and **_dropbox_**), it is possible to define the values to be selected (predefined terms).
 
+<br>
 
-### Structure of the Terminology definition file (TSV)
+#### Structure of the Terminology definition file (TSV)
 
 The file must have 9 columns with headers defined as follows:
 
@@ -75,7 +78,7 @@ Example of Maggot JSON file generated based on the same definition file
 
 <br>
 
-### Structure of the Terminology documentation file (TSV)
+#### Structure of the Terminology documentation file (TSV)
 
 The documentation definition file is used to have online help for each field (small icon placed next to each label on the form). So it should only be modified when a field is added or deleted, or moved to another section. This file will be used then to generate the online metadata documentation according to the figure below (See [Configuration](../../configuration) to find out how to carry out this transformation).
 
@@ -111,4 +114,6 @@ Same example as above converted to HTML format using Markdown format
 [1]: https://github.com/inrae/pgd-mmdt/blob/main/web/js/autocomplete/
 [2]: https://pmb-bordeaux.fr/maggot/metadata/frim1?format=maggot
 [3]: https://pmb-bordeaux.fr/maggot/conf/maggot-schema.json
-
+[4]: https://en.wikipedia.org/wiki/Metadata_standard
+[5]: https://ddialliance.org/
+[6]: https://ddialliance.org/project/the-dataverse-project

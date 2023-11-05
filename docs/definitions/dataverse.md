@@ -9,21 +9,30 @@ some_url:
 
 <style>.md-typeset h1 {display: none;} .md-nav__item {font-size: medium}</style>
 
+### Dataverse definition File
 
-<img src="../../images/WIP.png""><br>
+This definition file will allow Maggot to automatically export the dataset into a data repository based on [Dataverse][1]{:target="_blank"}. The approach consists of starting from the Maggot metadata file in JSON format and transforming it into another JSON format compatible with Dataverse.
 
----
+The structure of the [Dataverse JSON][2]{:target="_blank"} output file being known internally, a minimum of information is therefore necessary to carry out the correspondence.
 
-<img src="../../images/dataverse_logo.png" width="400px">
+The file must have 4 columns with headers defined as follows:
 
-* **Dataverse definition File**
-     * Example of Dataverse JSON file generated based on the definition file itself given as an example below.
-		  * [Dataverse JSON of the FRIM dataset][1]{:target="_blank"}
-     * Below an example of Dataverse definition file (TSV)
+* column 1 - **Field** : shortname of the Maggot fields
+* column 2 - **Typename** : The corresponding Dataverse fields. 
+* column 3 - **Type** :The Dataverse field at the top level encapsulating the fields in the “Typename” column where applicable
+* column 4 - **Terminology** : Indicates from which vocabulary the mapping should be performed. Concerning the vocabulary to be mapped: either on a dictionary, you must put the name of the corresponding [dictionary](../../dictionaries) prefixed with 'cvlist:', or on ontologies or on a thesaurus, you must specify the corresponding entry in the [mapping definition file](../mapping) and in prefixing it with 'cv:'.
+
+Below an example of Dataverse definition file (TSV)
 <center>
 <a href="../../images/dataverse_conf.png" data-lightbox="figconf"><img src="../../images/dataverse_conf.png" width="600px"></a>
 </center>
 <br>
 
-[1]: https://pmb-bordeaux.fr/maggot/metadata/frim1?format=dataverse
+Example of Dataverse JSON file generated based on the definition file itself given as an example above.
 
+   * [Dataverse JSON of the FRIM dataset][3]{:target="_blank"}
+
+
+[1]: https://dataverse.org/
+[2]: https://guides.dataverse.org/en/latest/api/native-api.html
+[3]: https://pmb-bordeaux.fr/maggot/metadata/frim1?format=dataverse

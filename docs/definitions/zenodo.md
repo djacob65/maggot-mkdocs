@@ -9,22 +9,22 @@ some_url:
 
 <style>.md-typeset h1 {display: none;} .md-nav__item {font-size: medium}</style>
 
+### Zenodo definition File
 
-<img src="../../images/WIP.png""><br>
+This definition file will allow Maggot to automatically export the dataset into a data repository based on [Zenodo][1]{:target="_blank"}. The approach consists of starting from the Maggot metadata file in JSON format and transforming it into another JSON format compatible with Zenodo.
 
----
+The structure of the [Zenodo JSON][2]{:target="_blank"} output file is not known internally, information on the structure will therefore be necessary to carry out the correspondence.
 
-<img src="../../images/zenodo_logo.png" width="400px">
-
-* **Zenodo definition File**
-
-     * Example of Zenodo JSON file generated based on the definition file itself given as an example below.
-		  * [Zenodo JSON of the FRIM dataset][1]{:target="_blank"}
-     * Below an example of Zenodo definition file (TSV)
+Below an example of Zenodo definition file (TSV)
 <center>
 <a href="../../images/zenodo_conf.png" data-lightbox="figconf"><img src="../../images/zenodo_conf.png" width="600px"></a>
 </center>
 <br>
 
+Example of Zenodo JSON file generated based on the definition file itself given as an example above.
 
-[1]: https://pmb-bordeaux.fr/maggot/metadata/frim1?format=zenodo
+   * [Zenodo JSON of the FRIM dataset][3]{:target="_blank"}
+
+[1]: https://www.openaire.eu/zenodo-guide
+[2]: https://developers.zenodo.org/#rest-api
+[3]: https://pmb-bordeaux.fr/maggot/metadata/frim1?format=zenodo

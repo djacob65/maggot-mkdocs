@@ -9,32 +9,39 @@ some_url:
 
 <style>.md-typeset h1 {display: none;} .md-nav__item {font-size: medium}</style>
 
-<img src="../../images/WIP.png""><br>
+### JSON-LD definition File
 
----
+This definition file will allow harvesters to collect structured metadata based on a semantic schema, i.e the fields themselves and not just their content can be associated with a semantic definition (ontology for example) which will then facilitate the link between the metadata and therefore the data ([JSON-LD][1]{:target="_blank"}). The chosen semantic schema is based on several metadata schemas.
 
-<a href="../../images/jsonld_fig1.png" data-lightbox="fig0"><img src="../../images/jsonld_fig1.png" width="800px"></a>
+Metadata schemas used to build the model proposed by default:
 
-* **JSON-LD definition File**
+   * [Schema.org][2]{:target="_blank"}, [Bioschemas.org][3]{:target="_blank"}, [Datacite][4]{:target="_blank"}, [DDI-RDF][5]{:target="_blank"}, [DubinCore][6]{:target="_blank"}, [Dataverse][7]{:target="_blank"}
 
-	 * Metadata schemas used to build the model proposed by default:
-		  * [Schema.org][2]{:target="_blank"}, [Bioschemas.org][3]{:target="_blank"}, [Datacite][4]{:target="_blank"}, [DDI-RDF][5]{:target="_blank"}, [DubinCore][6]{:target="_blank"}, [Dataverse][7]{:target="_blank"}
-     * Example of JSON-LD file generated based on the definition file itself given as an example below.
- 		  * [JSON-LD file of the FRIM dataset][1]{:target="_blank"}
-     * Below an example of JSON-LD definition file (TSV)
+Definition of the JSON-LD context using the metadata schemas proposed by default
 <center>
 <a href="../../images/jsonld_conf0.png" data-lightbox="conf0"><img src="../../images/jsonld_conf0.png" width="600px"></a>
-<a href="../../images/jsonld_conf1.png" data-lightbox="conf1"><img src="../../images/jsonld_conf1.png" width="800px"></a>
-<a href="../../images/jsonld_conf2.png" data-lightbox="conf2"><img src="../../images/jsonld_conf2.png" width="800px"></a>
-<a href="../../images/jsonld_conf3.png" data-lightbox="conf3"><img src="../../images/jsonld_conf3.png" width="800px"></a>
 </center>
+
+The structure of the JSON-LD is not known internally, information on the structure will therefore be necessary to carry out the correspondence.
+
+Example of JSON-LD definition file (partial) using the metadata schemas proposed by default (TSV)
+<center>
+<a href="../../images/jsonld_conf1.png" data-lightbox="conf1"><img src="../../images/jsonld_conf1.png" width="800px"></a>
+</center>
+
+Example of JSON-LD file generated based on the definition file itself given as an example above.
+
+   * [JSON-LD file of the FRIM dataset][8]{:target="_blank"}
 
 <br>
 
-[1]: https://pmb-bordeaux.fr/maggot/metadata/frim1?format=jsonld
+<a href="../../images/jsonld_fig1.png" data-lightbox="fig0"><img src="../../images/jsonld_fig1.png" width="800px"></a>
+
+[1]: https://en.wikipedia.org/wiki/JSON-LD
 [2]: https://schema.org/Dataset
 [3]: https://bioschemas.org/profiles/Dataset/1.0-RELEASE
 [4]: https://support.datacite.org/docs/datacite-metadata-schema-44
 [5]: https://rdf-vocabulary.ddialliance.org/discovery.html
 [6]: https://www.dublincore.org/specifications/dublin-core/dcmi-terms/
 [7]: https://docs.google.com/spreadsheets/d/13HP-jI_cwLDHBetn9UKTREPJ_F4iHdAvhjmlvmYdSSw/edit#gid=0
+[8]: https://pmb-bordeaux.fr/maggot/metadata/frim1?format=jsonld
