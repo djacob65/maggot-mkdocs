@@ -57,18 +57,29 @@ get_dictionary_values('people', merge=[0,' ',1])
 #### Other dictionaries
 
 * **Funders** : The dictionary of the funders allows you to define the funding agency, project ID and its corresponding URL.
+<center>
+<a href="../images/dico9.png" data-lightbox="fig9"><img src="../images/dico9.png" width="600px"></a>
+</center><br>
     * **_Note_** : can be renamed but while keeping its format (same columns and same layout).
 <center>
 <a href="../images/dico3.png" data-lightbox="fig3"><img src="../images/dico3.png" width="400px"></a>
 </center><br>
 
 * **Producers** : The dictionary of the data producers allows you to define their Institute and  project ID and their corresponding URL. Optionally, you can add the URL of the logo.
+<center>
+<a href="../images/dico8.png" data-lightbox="fig8"><img src="../images/dico8.png" width="600px"></a>
+</center><br>
     * **_Note_** : can be renamed but while keeping its format (same columns and same layout).
 <center>
 <a href="../images/dico4.png" data-lightbox="fig4"><img src="../images/dico4.png" width="400px"></a>
 </center><br>
 
 * **Vocabulary** : Use this dictionary for mixing thesauri and ontologies in order to better target the entire controlled vocabulary of its field of application. Only the vocabulary is mandatory, the URL linked to an ontology or a thesaurus is optional. See [Vocabulary](../definitions/vocabulary/) section to learn the extent of the possibilities concerning vocabulary in Maggot.
+<center>
+<a href="../images/dico7.png" data-lightbox="fig7"><img src="../images/dico7.png" width="600px"></a>
+</center><br>
+
+
     * **_Note_** : can be duplicated but while keeping its format (same columns and same layout).
 <center>
 <a href="../images/dico5.png" data-lightbox="fig5"><img src="../images/dico5.png" width="400px"></a>

@@ -28,7 +28,7 @@ some_url:
 #### Proposed approach
 
 * The two main ideas behind the tool are:
-     * Make the storage space also become a data repository, ensuring that metadata gets to the data.
+     * Make the data storage space a data repository without having to move the data, then ensure that the metadata gets to the data.
      * Be able to “capture” the user’s metadata as easily as possible by using their vocabulary.
 * Concerning the first idea: "Just" place a metadata file (JSON format) describing the project data in each subdirectory, and then find the projects and/or data corresponding to specific criteria. The choice fell on the JSON format, very suitable for describing metadata, readable by both humans and machines.
 * Concerning the second idea: Given the diversity of the fields, the approach chosen is to be both the most flexible and the most pragmatic possible by allowing users to choose their own vocabulary (controlled or not) corresponding to the reality of their field and their activities. However, a good approach is as much as possible to use only controlled vocabulary, that is to say relevant and sufficient vocabulary used as a reference in the field concerned to allow users to describe a project and its context without having to add additional terms. To this end, the tool must allow users a progressive approach towards the adoption of standardized controlled vocabularies (thesauri or even ontologies).
