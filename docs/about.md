@@ -45,20 +45,25 @@ some_url:
 
 ### Designers / Developers
 
-* Daniel Jacob ([@UMR BFP][2]{:target="_blank"}) | CATI [@PROSODIe][4]{:target="_blank"}
+* Daniel Jacob ([@UMR INRAE BFP][2]{:target="_blank"}) | CATI [@PROSODIe][4]{:target="_blank"}
 
-* François Ehrenmann ([@UMR BioGECO][1]{:target="_blank"}) | CATI [@GEDEOP][5]{:target="_blank"}
+* François Ehrenmann ([@UMR INRAE BioGECO][1]{:target="_blank"}) | CATI [@GEDEOP][5]{:target="_blank"}
 
-* Philippe Chaumeil ([@UMR BioGECO][1]{:target="_blank"})
+* Philippe Chaumeil ([@UMR INRAE BioGECO][1]{:target="_blank"})
 
 
 ### Contributors
 
 * Edouard Guitton ([@INRAE Dept. SA][6]{:target="_blank"}, [@Emerg'IN][3]{:target="_blank"})
 
+* Stéphane Bernillon ([@UR INRAE MycSA][14]{:target="_blank"})
+
+* Joseph TRAN ([@UMR INRAE EGFV][12]{:target="_blank"}) | CATI [@BARIC][13]{:target="_blank"}
+
+
 
 [1]: https://www6.bordeaux-aquitaine.inrae.fr/biogeco_eng/
-[2]: https://www6.bordeaux-aquitaine.inrae.fr/bfp_eng/
+[2]: https://eng-bfp.bordeaux-aquitaine.hub.inrae.fr/
 [3]: https://www.emergin.fr/emergin_eng/
 [4]: https://prosodie.cati.inrae.fr/
 [5]: https://gedeop.cati.inrae.fr/
@@ -69,6 +74,11 @@ some_url:
 
 [10]: https://github.com/inrae/pgd-mmdt
 [11]: https://pmb-bordeaux.fr/maggot/
+
+[12]: https://eng-egfv.bordeaux-aquitaine.hub.inrae.fr/
+[13]: https://www.cesgo.org/catibaric/
+[14]: https://eng-mycsa.bordeaux-aquitaine.hub.inrae.fr/
+
 
 <br><br>
 
