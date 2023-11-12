@@ -24,7 +24,7 @@ Metadata schemas used to build the model proposed by default:
 
    * [Schema.org][2]{:target="_blank"}, [Bioschemas.org][3]{:target="_blank"}, [Datacite][4]{:target="_blank"}, [DDI-RDF][5]{:target="_blank"}, [DubinCore][6]{:target="_blank"}, [Dataverse][7]{:target="_blank"}
 
-Definition of the JSON-LD context using the metadata schemas proposed by default
+Definition of the [JSON-LD context][9]{:target="_blank"} using the metadata schemas proposed by default
 <center>
 <a href="../../images/jsonld_conf0.png" data-lightbox="conf0"><img src="../../images/jsonld_conf0.png" width="600px"></a>
 </center>
@@ -50,3 +50,4 @@ Example of JSON-LD file generated based on the definition file itself given as a
 [6]: https://www.dublincore.org/specifications/dublin-core/dcmi-terms/
 [7]: https://docs.google.com/spreadsheets/d/13HP-jI_cwLDHBetn9UKTREPJ_F4iHdAvhjmlvmYdSSw/edit#gid=0
 [8]: https://pmb-bordeaux.fr/maggot/metadata/frim1?format=jsonld
+[9]: https://niem.github.io/json/reference/json-ld/context/

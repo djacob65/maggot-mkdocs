@@ -11,7 +11,7 @@ some_url:
 
 ### Terminology configuration
 
-A single file (***web/conf/config_terms.txt***) contains all the [terminology](../definitions/terminology/). The input and search interfaces are completely generated from this definition file, thus defining each of the fields, their input type (*checkbox*, *dropbox*, *textbox*, ...) and the associated controlled vocabulary (ontology and thesaurus by autocompletion, drop-down list according to a list of fixed terms). This is why a configuration and conversion step into JSON[^1] format is essential in order to be able to configure all the other modules (example: creation of the [MongoDB][1]{:target="_blank"} database schema when starting the application before filling it).
+A single file (***web/conf/config_terms.txt***) contains all the [terminology](../definitions/terminology/). The input and search interfaces are completely generated from this definition file, thus defining each of the fields, their input type (*checkbox*, *dropbox*, *textbox*, ...) and the associated controlled vocabulary (ontology and thesaurus by autocompletion, drop-down list according to a list of fixed terms). This is why a configuration and conversion step into JSON format is essential in order to be able to configure all the other modules (example: creation of the [MongoDB][1]{:target="_blank"} database schema when starting the application before filling it).
 
 <center>
 <a href="../images/config.png" data-lightbox="fig0"><img src="../images/config.png" width="800px"></a>
@@ -22,7 +22,7 @@ A single file (***web/conf/config_terms.txt***) contains all the [terminology](.
 
 #### TSV to JSON
 
-* This function is used to generate the terminology definition file in JSON[^1] format (**_config_terms.json_**) and the corresponding JSON-Schema[^2] file (**_maggot-schema.json_**) from a tabulated file (**1**). You can either create a terminology definition file in TSV format from scratch (see below to have more details), or extract the file from the current configuration (see [JSON to TSV](#json-to-tsv)).
+* This function is used to generate the terminology definition file in JSON format (**_config_terms.json_**) and the corresponding JSON-Schema file (**_maggot-schema.json_**) from a tabulated file (**1**). You can either create a terminology definition file in TSV format from scratch (see below to have more details), or extract the file from the current configuration (see [JSON to TSV](#json-to-tsv)).
 
 * Once the terminology definition file has been obtained (**2**), you can load it and press 'Submit'.
 
@@ -33,7 +33,7 @@ A single file (***web/conf/config_terms.txt***) contains all the [terminology](.
 
 #### TSV to DOC
 
-* This function generates the markdown[^4] documentation file (**_doc.md_**) from the template file (**_config_doc.txt_**) which is itself generated from the metadata definition file (**_config_terms.txt_**, cf [TSV to JSON](#tsv-to-json)).
+* This function generates the markdown documentation file (**_doc.md_**) from the template file (**_config_doc.txt_**) which is itself generated from the metadata definition file (**_config_terms.txt_**, cf [TSV to JSON](#tsv-to-json)).
 
 * Once the template file for the documentation (**_config_doc.txt_**) has been edited and documented (**6**) (see below to have more details), you can load it and press _Submit_ button.
 
@@ -47,9 +47,11 @@ A single file (***web/conf/config_terms.txt***) contains all the [terminology](.
 
 <br>
 
-[^1]: *JavaScript Object Notation* : format used to represent structured information
-[^2]: *JSON-Schema*: vocabulary that allows you to annotate and validate JSON documents.
-[^3]: *TSV*: open text format representing tabular data as "tab-separated values". Each row corresponds to a table row and the cells in a row are separated by a tab.
-[^4]: *Markdown*: Markdown is a lightweight markup language designed to provide easy-to-read and easy-to-write syntax. A Markdown document can be read as is without appearing to have been marked up or formatted with special instructions.
+*[TSV]: Open text format representing tabular data as "Tab-Separated Values". Each row corresponds to a table row and the cells in a row are separated by a tab
+*[JSON]: JavaScript Object Notation : format used to represent structured information
+*[autocompletion]: feature in which an application predicts the rest of a word a user is typing
+*[JSON-Schema]: vocabulary that allows you to annotate and validate JSON documents.
+*[Markdown]: a lightweight markup language designed to provide easy-to-read and easy-to-write syntax. A Markdown document can be read as is without appearing to have been marked up or formatted with special instructions.
+
 
 [1]: https://www.mongodb.com/basics

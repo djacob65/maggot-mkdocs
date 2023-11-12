@@ -33,34 +33,36 @@ some_url:
 * Concerning the first idea: "Just" place a metadata file (JSON format) describing the project data in each subdirectory, and then find the projects and/or data corresponding to specific criteria. The choice fell on the JSON format, very suitable for describing metadata, readable by both humans and machines.
 * Concerning the second idea: Given the diversity of the fields, the approach chosen is to be both the most flexible and the most pragmatic possible by allowing users to choose their own vocabulary (controlled or not) corresponding to the reality of their field and their activities. However, a good approach is as much as possible to use only controlled vocabulary, that is to say relevant and sufficient vocabulary used as a reference in the field concerned to allow users to describe a project and its context without having to add additional terms. To this end, the tool must allow users a progressive approach towards the adoption of standardized controlled vocabularies (thesauri or even ontologies).
 
-* With the approach proposed by Maggot, initially there is no question of opening the data, but of managing metadata associated with the data on a storage space with a precise perimeter represented by the collective (unit, team, project , platform, …). The main characteristic of the tool is, above all, to “capture” the metadata as easily as possible according to a well-chosen metadata schema. However, the opening of data via their metadata must be a clearly stated objective within the framework of projects financed by public institutions (e.g Europe). Therefore if you have taken care to correctly define your metadata schema so that it is possible to make a correspondence (using a mapping file) with a data repository recognized by the international community, then you can easily "push" its metadata with the data without having re-enter anything.
+* With the approach proposed by Maggot, initially there is no question of opening the data, but of managing metadata associated with the data on a storage space with a precise perimeter represented by the collective (unit, team, project , platform, …). The main characteristic of the tool is, above all, to “capture” the metadata as easily as possible according to a well-chosen metadata schema. However, the opening of data via their metadata must be a clearly stated objective within the framework of projects financed by public institutions (e.g Europe). Therefore if you have taken care to correctly define your metadata schema so that it is possible to make a [metadata crosswalk][15]{:target="_blank"} (using a mapping file) with a data repository recognized by the international community, then you can easily "push" its metadata with the data without having re-enter anything.
 
 ---
 
 ### Links
 
 * **Source code on Github** : [inrae/pgd-mmdt][10]{:target="_blank"}
-* **Instance online** : [UMR 1322 BFP][11]{:target="_blank"}
+* **Instance online** : [INRAE UMR 1322 BFP][11]{:target="_blank"}
 
 
 ### Designers / Developers
 
-* Daniel Jacob ([@UMR INRAE BFP][2]{:target="_blank"}) | CATI [@PROSODIe][4]{:target="_blank"}
+* Daniel Jacob ([INRAE UMR BFP][2]{:target="_blank"}) | CATI [PROSODIe][4]{:target="_blank"}
 
-* François Ehrenmann ([@UMR INRAE BioGECO][1]{:target="_blank"}) | CATI [@GEDEOP][5]{:target="_blank"}
+* François Ehrenmann ([INRAE UMR BioGECO][1]{:target="_blank"}) | CATI [GEDEOP][5]{:target="_blank"}
 
-* Philippe Chaumeil ([@UMR INRAE BioGECO][1]{:target="_blank"})
+* Philippe Chaumeil ([INRAE UMR BioGECO][1]{:target="_blank"})
 
 
 ### Contributors
 
-* Edouard Guitton ([@INRAE Dept. SA][6]{:target="_blank"}, [@Emerg'IN][3]{:target="_blank"})
+* Edouard Guitton ([INRAE Dept. SA][6]{:target="_blank"}, [Emerg'IN][3]{:target="_blank"})
 
-* Stéphane Bernillon ([@UR INRAE MycSA][14]{:target="_blank"})
+* Stéphane Bernillon ([INRAE UR MycSA][14]{:target="_blank"})
 
-* Joseph TRAN ([@UMR INRAE EGFV][12]{:target="_blank"}) | CATI [@BARIC][13]{:target="_blank"}
+* Joseph TRAN ([INRAE UMR EGFV][12]{:target="_blank"}) | CATI [BARIC][13]{:target="_blank"}
 
-
+*[JSON]: JavaScript Object Notation : format used to represent structured information
+*[autocompletion]: feature in which an application predicts the rest of a word a user is typing
+*[FAIR]: Findable, Accessible, Interoperable and Reusable
 
 [1]: https://www6.bordeaux-aquitaine.inrae.fr/biogeco_eng/
 [2]: https://eng-bfp.bordeaux-aquitaine.hub.inrae.fr/
@@ -79,6 +81,7 @@ some_url:
 [13]: https://www.cesgo.org/catibaric/
 [14]: https://eng-mycsa.bordeaux-aquitaine.hub.inrae.fr/
 
+[15]: https://www.google.com/search?q=metadata+crosswalk+definition&oq=metadata+crosswalk
 
 <br><br>
 
