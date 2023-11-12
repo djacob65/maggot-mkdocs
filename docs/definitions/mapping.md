@@ -11,7 +11,7 @@ some_url:
 
 ### Mapping definition File
 
-The mapping file is used as indicated by its name to match a term chosen by the user during entry with another term from an ontology or a thesaurus and therefore to obtain a URL which will be used for referencing. It can be used for each conversion requiring such a mapping (e.g. to the [Dataverse](../dataverse), [Zenodo](../zenodo) or [JSON-LD](../json-ld) format).
+The mapping file is used as indicated by its name to match a term chosen by the user during entry with another term from an ontology or a thesaurus and therefore to obtain a URL which will be used for referencing. It can be used for each metadata crosswalk requiring such a mapping (e.g. to the [Dataverse](../dataverse), [Zenodo](../zenodo) or [JSON-LD](../json-ld) format).
 
 The role of this definition file is illustrated with the figure above
 <center>

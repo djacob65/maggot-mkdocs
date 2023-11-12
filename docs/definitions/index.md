@@ -19,7 +19,7 @@ There are **two levels of definition files** as shown the figure below:
 
 **1** - The first level concerns the definition of terminology (metadata) similar to a [descriptive metadata plan][7]{:target="_blank"}. Clearly, this category is more akin to configuration files. They represent the heart of the application around which everything else is based. The input and search interfaces are completely generated from these definition files (especially the *[web/conf/config_terms.txt](terminology)* file), thus defining each of the fields, their <a href="../images/terminology_types.png" data-lightbox="fig3">input type</a> (*checkbox*, *dropbox*, *textbox*, ...) and the associated [controlled vocabulary](vocabulary) (ontology and thesaurus by autocompletion, drop-down list according to a list of fixed terms). This is why a [configuration step](../configuration) is essential in order to be able to configure all the other modules.
 
-**2** - The second level concerns the definitions of the mapping to a differently structured metadata schema, used either ***i)*** for metadata export to a remote repository (e.g. [Dataverse](dataverse), [Zenodo](zenodo)) or ***ii)*** for metadata harvesting (e.g. [JSON-LD](json-ld), [OAI-PMH](oai-pmh)). Simply place the definition files in the configuration directory (*[web/conf][4]{:target="_blank"}*) for them to be taken into account, provided you have adjusted the configuration (*[web/inc/config/config.inc][5]{:target="_blank"}*).
+**2** - The second level concerns the definitions of the mapping to a differently structured metadata schema ([metadata crosswalk][8]{:target="_blank"}), used either ***i)*** for metadata export to a remote repository (e.g. [Dataverse](dataverse), [Zenodo](zenodo)) or ***ii)*** for metadata harvesting (e.g. [JSON-LD](json-ld), [OAI-PMH](oai-pmh)). Simply place the definition files in the configuration directory (*[web/conf][4]{:target="_blank"}*) for them to be taken into account, provided you have adjusted the configuration (*[web/inc/config/config.inc][5]{:target="_blank"}*).
 
 All definition files are made using a simple spreadsheet then exported in TSV format. 
 
@@ -43,3 +43,10 @@ See an example on line : [https://pmb-bordeaux.fr/maggot/config/view](https://pm
 [5]: https://github.com/inrae/pgd-mmdt/blob/main/web/inc/config/config.inc
 [6]: https://inrae.github.io/pgd-mmdt/pdf/MAGGOT_OpenData_Oct2023.pdf?download=false
 [7]: https://sustainableheritagenetwork.org/system/files/atoms/file/How_to_Create_a_Descriptive_Metadata_Plan.pdf
+[8]: https://www.rd-alliance.org/groups/research-metadata-schemas-wg
+
+<!--
+https://rd-alliance.github.io/Research-Metadata-Schemas-WG/
+https://www.rd-alliance.org/group/research-metadata-schemas-wg/outcomes/collection-crosswalks-fifteen-research-data-schemas
+https://www.getty.edu/research/publications/electronic_publications/intrometadata/crosswalks.html
+-->

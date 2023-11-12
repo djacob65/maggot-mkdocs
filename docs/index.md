@@ -107,5 +107,3 @@ Indeed, all the JSON metadata files are scanned and parsed according to a fixed 
 [18]: https://en.wikipedia.org/wiki/Ontology_(information_science)
 [19]: https://en.wikipedia.org/wiki/Thesaurus_(information_retrieval)
 
-
-

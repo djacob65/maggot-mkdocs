@@ -33,7 +33,7 @@ some_url:
      
 	 * **1** - declare the files to be deposited in the resources (_**1**_) ; these same files must also be present in the storage space.
      
-	 * **2** - create a so-called semaphore file (_META_datafile_ok.txt_) (_**2**_); its sole presence, independently of its content will authorize the transfer. Indeed, the creation of such a file guarantees that the user has actually write rights to the storage space corresponding to his dataset. This prevents someone else from publishing the data without having the right to do so. This mechanism also avoids having to manage user accounts on Maggot.
+	 * **2** - create a semaphore file (_META_datafile_ok.txt_) (_**2**_); its sole presence, independently of its content will authorize the transfer. Indeed, the creation of such a file guarantees that the user has actually write rights to the storage space corresponding to his dataset. This prevents someone else from publishing the data without having the right to do so. This mechanism also avoids having to manage user accounts on Maggot.
 
 * Then, all you have to do is click on '**Publish**' to "_push_" the metadata and data to the repository (_**3**_).
 
