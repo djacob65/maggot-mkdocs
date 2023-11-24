@@ -17,6 +17,10 @@ Open source research data repository software, [approved by Europe][4]{:target="
 
 This definition file will allow Maggot to automatically export the dataset into a data repository based on [Dataverse][1]{:target="_blank"}. The approach consists of starting from the Maggot metadata file in JSON format and transforming it into another JSON format compatible with Dataverse.
 
+<center>
+<a href="../../images/dataverse_fig0.png" data-lightbox="fig0"><img src="../../images/dataverse_fig0.png" width="600px"></a>
+</center>
+
 The structure of the [Dataverse JSON][2]{:target="_blank"} output file being known internally, a minimum of information is therefore necessary to carry out the correspondence.
 
 The file must have 4 columns with headers defined as follows:

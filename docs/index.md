@@ -16,6 +16,7 @@ some_url:
 </center>
 <br>
 
+
 ### Foster good data management, with data sharing in mind
 
 Sharing descriptive [Metadata][3]{:target="_blank"} is the first essential step towards [Open Scientific Data][2]{:target="_blank"}. With this in mind, Maggot was specifically designed to annotate datasets by creating a metadata file to attach to the storage space. Indeed, it allows users to easily add descriptive metadata to datasets produced within a collective of people (research unit, platform, multi-partner project, etc.). This approach fits perfectly into a data management plan as it addresses the issues of data organization and documentation, data storage and frictionless metadata sharing within this same collective and beyond.
@@ -33,8 +34,10 @@ The main functionalities of Maggot were established according to a well-defined 
     * Indeed, the descriptive metadata thus produced can be associated with the corresponding data directly in the storage space then it is possible to perform a search on the metadata in order to find one or more sets of data. Only descriptive metadata is accessible by default.
 3. Publish the metadata of datasets along with their data files into an [Europe-approved repository][8]{:target="_blank"}
 
+
 _See a short [Presentation][11]{:target="_blank"} and [Poster][12]{:target="_blank"} for a quick overview_.
 
+<br>
 
 ### Overview of the different stages of metadata management
 
@@ -55,7 +58,7 @@ The dictionaries offered by default are: <i><a href="./images/dico1.png" data-li
 
 **3** - The web interface for entering metadata is entirely built on the basis of [definition files](./definitions/index.md). 
 <a href="javaScript:;" class="extra-js extra-show-js">&nbsp;&nbsp; :octicons-chevron-down-16:</a><span class="extra-more extra-hide-more">
-The metadata are distributed according to the different sections chosen, each constituting a tab (see <a href="./images/entry_fig.png" data-lightbox="fig1">screenshot 1</a> & <a href="./images/entry_fig2.png" data-lightbox="fig5">screenshot 2</a>). Mandatory fields are marked with a red star and must be documented in order to be able to generate the metadata file. The entry of metadata governed by a controlled vocabulary is done by autocompletion from term lists (<i>dictionary, thesaurus or ontology</i>). We can also define external resources (URL links) relating to documents, publications or other related data. Maggot thus becomes a hub for your datasets connecting different resources, local and external. Once the mandatory fields (at least) and other recommended fields (at best) have been entered, the metadata file can be generated in JSON format.
+The metadata are distributed according to the different sections chosen, each constituting a tab (see <a href="./images/entry_fig2.png" data-lightbox="fig5">screenshot</a>). Mandatory fields are marked with a red star and must be documented in order to be able to generate the metadata file. The entry of metadata governed by a controlled vocabulary is done by autocompletion from term lists (<i>dictionary, thesaurus or ontology</i>). We can also define external resources (URL links) relating to documents, publications or other related data. Maggot thus becomes a hub for your datasets connecting different resources, local and external. Once the mandatory fields (at least) and other recommended fields (at best) have been entered, the metadata file can be generated in JSON format.
 </span><a href="javaScript:;" class="extra-js-2 extra-hide-js">&nbsp; :octicons-chevron-up-16: </a>
 
 **4** - The file generated in JSON format must be placed in the [storage space](./infrastructure.md) reserved for this purpose. 
@@ -76,6 +79,15 @@ Indeed, all the JSON metadata files are scanned and parsed according to a fixed 
 <a href="javaScript:;" class="extra-js extra-show-js">&nbsp;&nbsp; :octicons-chevron-down-16:</a><span class="extra-more extra-hide-more">that suits you (currently repositories based on [Dataverse][16]{:target="_blank"} and [Zenodo][17]{:target="_blank"} are supported).
 </span><a href="javaScript:;" class="extra-js-2 extra-hide-js">&nbsp; :octicons-chevron-up-16: </a>
 
+<br>
+
+### Additional key points
+
+   * <p>Being able to generate descriptive metadata from the start of a project or study without waiting for all the data to be acquired or processed, nor for the moment when one wish to publish data, thus respecting the [research data lifecycle][20]{:target="_blank"} as best as possible</p>
+   * <p>The implementation of the tool requires involving all data stakeholders upstream (definition of the metadata schema, vocabularies, targeted data repositories, etc.); everyone has their role: [data manager/data steward][22]{:target="_blank"} on one side but also [scientists and data producers][21]{:target="_blank"} on the other.</p>
+   * <p>A progressive rise towards an increasingly [controlled and standardized vocabulary][23]{:target="_blank"} is not only possible but even encouraged. First we can start with a simple vocabulary dictionary used locally and grouping together domain vocabularies. Then we can consider the creation of a thesaurus with or without mapping to ontologies. The promotion of ontologies must also be done gradually by selecting those which are truly relevant for the collective. A tool like Maggot makes it easy to implement them.</p>
+
+
 <br><br>
 
 ---
@@ -89,7 +101,7 @@ Indeed, all the JSON metadata files are scanned and parsed according to a fixed 
 
 [1]: https://www.inrae.fr/en
 [2]: https://en.wikipedia.org/wiki/Open_scientific_data
-[3]: https://en.wikipedia.org/wiki/Metadata
+[3]: https://www.opendatasoft.com/en/glossary/metadata/
 [4]: https://en.wikipedia.org/wiki/Data_management_plan
 [5]: https://open-research-europe.ec.europa.eu/for-authors/data-guidelines
 [6]: https://www.ouvrirlascience.fr/second-national-plan-for-open-science/
@@ -106,4 +118,9 @@ Indeed, all the JSON metadata files are scanned and parsed according to a fixed 
 [17]: https://www.openaire.eu/zenodo-guide
 [18]: https://en.wikipedia.org/wiki/Ontology_(information_science)
 [19]: https://en.wikipedia.org/wiki/Thesaurus_(information_retrieval)
+
+[20]: https://www.reading.ac.uk/research-services/research-data-management/about-research-data-management/the-research-data-lifecycle
+[21]: https://www.opendatasoft.com/en/glossary/data-producer/
+[22]: https://www.opendatasoft.com/en/glossary/data-steward/
+[23]: https://pitt.libguides.com/metadatadiscovery/controlledvocabularies
 

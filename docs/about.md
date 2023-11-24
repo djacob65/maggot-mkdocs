@@ -40,8 +40,12 @@ some_url:
 ### Links
 
 * **Source code on Github** : [inrae/pgd-mmdt][10]{:target="_blank"}
+* **Issues tracker** : [inrae/pgd-mmdt/issues][16]{:target="_blank"}
 * **Instance online** : [INRAE UMR 1322 BFP][11]{:target="_blank"}
 
+### Contacts
+
+* Daniel Jacob ([INRAE UMR BFP][2]{:target="_blank"}) : [ORCID:0000-0002-6687-7169][17]{:target="_blank"}
 
 ### Designers / Developers
 
@@ -82,6 +86,9 @@ some_url:
 [14]: https://eng-mycsa.bordeaux-aquitaine.hub.inrae.fr/
 
 [15]: https://www.google.com/search?q=metadata+crosswalk+definition&oq=metadata+crosswalk
+
+[16]: https://github.com/inrae/pgd-mmdt/issues
+[17]: https://orcid.org/0000-0002-6687-7169
 
 <br><br>
 
