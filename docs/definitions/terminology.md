@@ -22,6 +22,10 @@ Each time there is a change in these two definition files, it is necessary to [c
 
 Terminology is the set of terms used to define the metadata of a dataset. A single file (**_web/conf/config_terms.txt_**) contains all the terminology. The input and search interfaces (e.g <a href="../../images/entry_fig2.png" data-lightbox="fig5">screenshot</a>) are completely generated from this definition file, thus defining ***i)*** each of the fields, their input type (checkbox, dropbox, textbox, ...) and ***ii)*** the associated controlled vocabulary (ontology and thesaurus by autocompletion, drop-down list according to a list of fixed terms).
 
+<center>
+<a href="../../images/config_terms_wf.png" data-lightbox="figwf"><img src="../../images/config_terms_wf.png" width="700px"></a>
+</center>
+
 The [metadata schema][4]{:target="_blank"} proposed by defaut is mainly established according to the [DDI][5]{:target="_blank"} (Data Documentation Initiative) schema that also corresponds to that adopted by the [Dataverse][6]{:target="_blank"} software.
 
 Terminology is organised in several sections. By default 6 sections are proposed, but you can redefine them as you wish:

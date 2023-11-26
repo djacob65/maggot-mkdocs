@@ -37,16 +37,18 @@ MAGGOT uses 3 Docker images for 3 distinct services:
 
 #### Configuration
 
-*  *[run][23]{:target="_blank"}* : defines web port, root of the data directory (including for development)
+*  *[run][23]{:target="_blank"}* : defines root of the data directory (including for development)
 *  *[dockerdbpart/initialisation/setupdb-js.template][20]{:target="_blank"}* : defines MongoDB settings
 *  *[dockerscanpart/scripts/config.py][21]{:target="_blank"}* : defines MongoDB settings (dbserver, dbport, username, password)
 *  *[web/inc/config/mongodb.inc][24]{:target="_blank"}* : defines MongoDB settings (dbserver, dbport, username, password)
 *  *[web/inc/config/config.inc][22]{:target="_blank"}* : defines many of web parameters (modify only if necessary)
 *  ***web/inc/config/local.inc*** : defines the application parameters specific to the local installation (not erase when updating).
 
+See [Configuration settings](../settings)
+
 ***Warning*** : You have to pay attention to put the same MongoDB settings in all the above configuration files. It is best not to change anything. It would have been preferable to put a single configuration file but this was not yet done given the different languages involved (bash, javascript, python, PHP). To be done!
 
-***Note*** : If you want to run multiple instances, you will need to change in the *[run][23]{:target="_blank"}* file, *i)* the container names, *ii)* the data path, *iii)* the port number and the MongoDB volume name, and also the MongoDB port in the different configuration files.
+***Note*** : If you want to run multiple instances, you will need to change in the *[run][23]{:target="_blank"}* file, *i)* the container names, *ii)* the data path, *iii)* the MongoDB volume name.
 
 The following two JSON files are defined by default but can be easily configured from the web interface. See the [Terminology Definition](../configuration/config) section.
 

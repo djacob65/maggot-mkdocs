@@ -45,7 +45,7 @@ some_url:
 
 ### Contacts
 
-* Daniel Jacob ([INRAE UMR BFP][2]{:target="_blank"}) : [ORCID:0000-0002-6687-7169][17]{:target="_blank"}
+* Daniel Jacob ([INRAE UMR BFP][2]{:target="_blank"}) : [daniel.jacob @ inrae.fr][17]{:target="_blank"}
 
 ### Designers / Developers
 
