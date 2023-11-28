@@ -21,9 +21,13 @@ Indeed, the [blockchain][2]{:target="_blank"} is a technology that makes it poss
 
 [bloxberg][1]{:target="_blank"} is the most important [blockchain][2]{:target="_blank"} project in science. It was founded in 2019 by [MPDL][4]{:target="_blank"} , looking for a way to store research results and make them available to other researchers. In this sense, bloxberg is a decentralized register in which results can be stored in a tamper-proof way with a time stamp and an identifier.
 
-bloxberg is based on the [Ethereum Blockchain][3]{:target="_blank"}. However, it makes use of a different consensus mechanism: instead of “Proof of Stake” used by Ethereum since 2022, bloxberg validates blocks through “Proof of Authority”. Each node is operated by one member. All members of the association are research institutions and are known in the network.  Currently, bloxberg has 44 nodes. It is an international project with participating institutions from all over the world.
+bloxberg is based on the [Ethereum Blockchain][3]{:target="_blank"}. However, it makes use of a different consensus mechanism: instead of “[Proof of Stake][9]{:target="_blank"}” used by Ethereum since 2022, bloxberg validates blocks through “[Proof of Authority][10]{:target="_blank"}”. Each node is operated by one member. All members of the association are research institutions and are known in the network.  Currently, bloxberg has 44 nodes. It is an international project with participating institutions from all over the world.
 
-You will need a [Ethereum address][5]{:target="_blank"} and an API key (must be requested via bloxberg-services (at) mpdl.mpg.de).
+#### How to process ?
+
+You will need a [Ethereum address][5]{:target="_blank"} and an API key (must be requested via bloxberg-services (at) mpdl.mpg.de). See an [example of pushing][11]{:target="_blank"} a metadata file to the bloxberg blockchain using Maggot.
+
+<br>
 
 #### Useful links
 
@@ -42,3 +46,6 @@ You will need a [Ethereum address][5]{:target="_blank"} and an API key (must be 
 [6]: https://bloxberg.org/developers-hut/documentation/
 [7]: https://forgemia.inra.fr/blockchain-esr
 [8]: https://blockexplorer.bloxberg.org/
+[9]: https://en.wikipedia.org/wiki/Proof_of_stake
+[10]: https://en.wikipedia.org/wiki/Proof_of_authority
+[11]: https://inrae.github.io/pgd-mmdt/pdf/MAGGOT_Tests_Push_bloxberg_Nov2023.pdf?download=false
