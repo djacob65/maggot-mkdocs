@@ -109,11 +109,100 @@ sh ./run <option>
 
 <br>
 
+#### Launching the web application in the web browser
+
+* Once the application is started, we can see if the containers are started using the following command:
+   ```sh
+   docker ps -a
+   ```
+
+* which should produce a result similar to the following:
+
+<pre style="color:#060606; font-size: 12px;">
+   CONTAINER ID  IMAGE          COMMAND                 CREATED          STATUS         PORTS                                  NAMES
+   5914504f456d  pgd-mmdt-web   "docker-php-entrypoi."  12 seconds ago   Up 10 seconds  0.0.0.0:8087->80/tcp, :::8087->80/tcp  mmdt-web
+   226b13ed9467  pgd-mmdt-scan  "cron -f"               12 seconds ago   Up 11 seconds                                         mmdt-scan
+   81fecbb56d23  pgd-mmdt-db    "docker-entrypoint.s."  13 seconds ago   Up 12 seconds  27017/tcp                              mmdt-db
+</pre>
+
+* On the first line, the one which corresponds to the web interface, we see that port 80 of the docker is exported to port 8087 of the VM.
+Let's say that the IP address of your VM is 192.168.56.2, then in your browser you will need to put the URL http://192.168.56.2:8087/. You can of course change the port number in the '*[run][23]{:target="_blank"}*' file.
+
+* It may be preferable to use a lightweight http server like [nginx][27]{:target="_blank"} so that the Maggot URL will be http://192.168.56.2/maggot/. Below an example of config:
+   ```sh
+   ## /etc/nginx/nginx.conf
+   http {
+   
+   ...
+       upstream maggot  { server 127.0.0.1:8087; }
+   ...
+   
+   }
+   
+   ## /etc/nginx/conf.d/my-site.conf
+   
+   server {
+       listen 80 default;
+       server_name $host;
+   
+   ...
+   
+       location /maggot/ {
+           proxy_set_header Host $host;
+           proxy_set_header X-App-Name 'maggot';
+           proxy_set_header X-Real-Ip $remote_addr;
+           proxy_set_header X-Forwarded-Host $host;
+           proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+           proxy_pass http://maggot/;
+       }
+   
+   ...
+   
+   }
+   ```
+
+<br>
+
 #### Stoping the application
 
 * To stop the application :
    ```sh
    sh ./run stop
+   ```
+
+<br>
+
+#### Updating the application
+
+When updating the application, it is imperative to preserve a whole set of configuration files as well as the content of certain directories (dictionaries, javascripts dedicated to vocabularies, etc.). An update script is available ([./etc/update-maggot.sh][19]{:target="_blank"}) preferably placed under '**/usr/local/bin**'. To preserve your configuration, it is recommended to create local configuration files.
+
+* A first file '**local.conf**' will contain all the parameters to be preserved, initially contained in the '*[run][23]{:target="_blank"}*' file. A small example could be as follow :
+   ```sh
+   #!/bin/bash
+
+   # Local HTTP Port for web application
+   WEB_PORT=8088
+
+   # Path to the data
+   DATADIR=/media/Workdir/Share/DATA/
+   ```
+
+* A second file '**./web/inc/config/local.inc**' will contain all the parameters to be preserved, initially contained in the '*[./web/inc/config/config.inc][22]{:target="_blank"}*' file. A small example could be as follow :
+   ```php
+   <?php
+
+   # Main title
+   $TITLE ='Metadata management - My Labs';
+   $MAINTITLE =$TITLE;
+
+   # File Browser
+   $FILEBROWSER=1;
+   $URL_FILEBROWSER='/fb/';
+
+   # Enable some functionalities
+   $export_oai = 1;
+
+   ?>
    ```
 
 
@@ -158,7 +247,7 @@ You can provide access to your data via a [file browser][25]{:target="_blank"}. 
 [16]: https://www.youtube.com/watch?v=CaDzYUSdVn8&ab_channel=URTechDotCa
 [17]: https://www.mongodb.com/basics
 [18]: https://github.com/inrae/pgd-mmdt/blob/main/dockerscanpart/scripts/pgd-cron
-
+[19]: https://github.com/inrae/pgd-mmdt/blob/main/etc/update-maggot.sh
 [20]: https://github.com/inrae/pgd-mmdt/blob/main/dockerdbpart/initialisation/setupdb-js.template
 [21]: https://github.com/inrae/pgd-mmdt/blob/main/dockerscanpart/scripts/config.py
 [22]: https://github.com/inrae/pgd-mmdt/blob/main/web/inc/config/config.inc
@@ -167,3 +256,4 @@ You can provide access to your data via a [file browser][25]{:target="_blank"}. 
 
 [25]: https://filebrowser.org/
 [26]: https://github.com/djacob65/maggot-fb
+[27]: https://docs.nginx.com/nginx/admin-guide/web-server/web-server/
