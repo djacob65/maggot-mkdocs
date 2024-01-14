@@ -59,9 +59,10 @@ This file defines parameters related to *i*) the web interface, *ii*) the functi
 
 |Parameter | Description | Default value
 ------------ | ------------- | ------------ 
+EXTERN | Indicates if the use of the tool is only for external use, i.e. without using a storage space. | 0
+PRIVATE_ACCESS | Gives the possibility of managing private access to metadata | 0
 ZOOMWP | Zoom level regarding the web interface. By reducing the size slightly, you get a better layout. | 90%
 RESMEDIA | Gives the possibility of putting a MINE type on each resource in the metadata. | 1
-EXTERN | Indicates if the use of the tool is only for external use, i.e. without using a storage space. | 0
 TITLE | Title to display in main banner | Metadata management
 FILEBROWSER | Indicates whether the file browser is used. This assumes it is installed. | 0
 URL_FILEBROWSER | File browser URL. It can be absolute or relative. | /fb/
@@ -74,10 +75,11 @@ export_dataverse | Indicates whether the Dataverse feature is enabled | 1
 export_zenodo | Indicates whether the Zenodo feature is enabled | 1
 export_jsonld | Indicates whether the JSON-LD feature is enabled | 1
 export_oai | Indicates whether the OAI-PMH feature is enabled | 0
+export_bloxberg | Indicates whether the Bloxberg Blockchain feature is enabled (Experimental) | 0
 cvdir | Relative path of the Control Vocabulary Listes (cvlist) | cvlist/
 maggot_fulltitle | Maggot name of the field corresponding to the title in dataverse/zenodo | fulltitle
 auth_senddata_file | Name of the file that must be present in the data directory to authorize the transfer of the data file | META_datafile_ok.txt
-
+private_auth_file | Name of the private access file | META_auth.txt
 
 <br>
 
