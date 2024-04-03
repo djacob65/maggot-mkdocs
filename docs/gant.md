@@ -7,6 +7,7 @@ date: 2023-11-13
 some_url:
 ---
 
+# Gant
 
 #### Gantt diagrams of the developments
 

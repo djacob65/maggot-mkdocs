@@ -7,6 +7,8 @@ date: 2023-10-09
 some_url:
 ---
 
+# JSON-LD Definition File
+
 <style>.md-typeset h1 {display: none;} .md-nav__item {font-size: medium}</style>
 
 <img src="../../images/jsonld_fig0.png" width="600px">

@@ -7,6 +7,8 @@ date: 2023-10-09
 some_url:
 ---
 
+# Dictionaries
+
 <style>.md-typeset h1 {display: none;} .md-nav__item {font-size: medium}</style>
 
 ### Presentation

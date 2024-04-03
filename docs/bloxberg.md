@@ -7,6 +7,8 @@ date: 2023-10-09
 some_url:
 ---
 
+# Bloxberg Blockchain
+
 <style>.md-typeset h1 {display: none;} .md-nav__item {font-size: medium}</style>
 
 ###  EXPERIMENTAL - Certification of metadata file on the bloxberg blockchain

@@ -7,6 +7,8 @@ date: 2023-10-09
 some_url:
 ---
 
+# Configuration settings
+
 <style>.md-typeset h1 {display: none;} .md-nav__item {font-size: medium}</style>
 
 <style>.md-typeset table:not([class]) th {

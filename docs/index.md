@@ -7,6 +7,8 @@ date: 2023-10-09
 some_url:
 ---
 
+# Home
+
 <style>.md-typeset h1 {display: none;} .md-nav__item {font-size: medium}</style>
 
 ![](images/logo.png)
@@ -109,7 +111,7 @@ Indeed, all the JSON metadata files are scanned and parsed according to a fixed 
 [8]: https://open-research-europe.ec.europa.eu/for-authors/data-guidelines#approvedrepositories
 [9]: https://ddialliance.org/
 [10]: https://en.wikipedia.org/wiki/Metadata_standard
-[11]:  https://inrae.github.io/pgd-mmdt/pdf/MAGGOT_Metadata_Oct2023.pdf?download=false
+[11]:  https://inrae.github.io/pgd-mmdt/pdf/MAGGOT_Presentation_Jan2024.pdf?download=false
 [12]:  https://inrae.github.io/pgd-mmdt/pdf/MAGGOT_Poster_Oct2023.pdf?download=false
 [13]: https://pmb-bordeaux.fr/maggot/entry
 [14]: https://pmb-bordeaux.fr/maggot/search

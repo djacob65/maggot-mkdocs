@@ -7,6 +7,8 @@ date: 2023-10-09
 some_url:
 ---
 
+# Mapping Definition File
+
 <style>.md-typeset h1 {display: none;} .md-nav__item {font-size: medium}</style>
 
 ### Mapping definition File

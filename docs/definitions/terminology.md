@@ -8,6 +8,8 @@ some_url:
 hide: toc
 ---
 
+# Terminology
+
 <style>.md-typeset h1 {display: none;} .md-nav__item {font-size: medium}</style>
 
 

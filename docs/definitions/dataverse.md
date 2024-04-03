@@ -7,6 +7,8 @@ date: 2023-10-09
 some_url:
 ---
 
+# Dataverse Definition File
+
 <style>.md-typeset h1 {display: none;} .md-nav__item {font-size: medium}</style>
 
 <img src="../../images/dataverse_logo.png" width="250px">
@@ -43,6 +45,6 @@ Example of Dataverse JSON file generated based on the definition file itself giv
 <br><br>
 
 [1]: https://dataverse.org/
-[2]: https://guides.dataverse.org/en/latest/api/native-api.html
+[2]: https://guides.dataverse.org/en/latest/api/native-api.html#import-a-dataset-into-a-dataverse-collection
 [3]: https://pmb-bordeaux.fr/maggot/metadata/frim1?format=dataverse
 [4]: https://open-research-europe.ec.europa.eu/for-authors/data-guidelines#approvedrepositories

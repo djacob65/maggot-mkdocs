@@ -7,6 +7,8 @@ date: 2023-10-10
 some_url:
 ---
 
+# Infrastructure
+
 <style>.md-typeset h1 {display: none;} .md-nav__item {font-size: medium}</style>
 
 ### Infrastructure : Local, Remote or Mixed
