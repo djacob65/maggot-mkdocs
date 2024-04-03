@@ -31,5 +31,6 @@ jobs:
       - run: pip install mkdocs-section-index
       - run: pip install mkdocs-tooltips
       - run: pip install mkdocs-with-pdf
+      - run: pip install mkdocs-print-site-plugin
       - run: pip install pymdown-extensions
       - run: mkdocs gh-deploy --force
