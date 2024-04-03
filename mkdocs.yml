@@ -131,6 +131,7 @@ validation:
 
 nav:
     - Home: index.md
+    - Quick tutorial: tutorial.md
     - Infrastructure: infrastructure.md
     - Installation: installation.md
     - Definition files:
