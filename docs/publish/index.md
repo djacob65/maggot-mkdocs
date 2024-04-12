@@ -35,4 +35,6 @@ some_url:
 [4]: https://dataverse.org/
 [5]: https://www.openaire.eu/zenodo-guide
 [6]: https://open-research-europe.ec.europa.eu/for-authors/data-guidelines#approvedrepositories
-[7]: https://www.google.com/search?q=metadata+crosswalk+definition&oq=metadata+crosswalk
+[7]: https://en.wikipedia.org/wiki/Schema_crosswalk
+
+# https://www.google.com/search?q=metadata+crosswalk+definition&oq=metadata+crosswalk

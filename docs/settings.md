@@ -82,6 +82,21 @@ cvdir | Relative path of the Control Vocabulary Listes (cvlist) | cvlist/
 maggot_fulltitle | Maggot name of the field corresponding to the title in dataverse/zenodo | fulltitle
 auth_senddata_file | Name of the file that must be present in the data directory to authorize the transfer of the data file | META_datafile_ok.txt
 private_auth_file | Name of the private access file | META_auth.txt
+sendMail | Configuring messaging for sending metadata to data managers (see below) | NULL
+
+<br>
+
+The messaging configuration is done using the following array in the **inc/config/config.inc** file (or more judiciously in **inc/config/local.inc** in order to be preserved during an update) - To understand how it works see [Send Emails using PHPmailer][2]{:target="_blank"}
+
+```php
+$sendMail['smtpHost'] = 'smtp.example.org';        //  Set the SMTP server to send through
+$sendMail['smtpSecure'] = 'tls';                   //  Enable TLS encryption
+$sendMail['smtpPort'] = 587;                       //  Set the TCP port to connect to
+$sendMail['CheckEmail'] = 'maggot@exemple.org';    //  Email address authorized to send emails
+$sendMail['CheckPass'] = 'password';               //  The corresponding password
+$sendMail['CheckName'] = 'Maggot';                 //  Alias name
+$sendMail['UserEmail'] = 'admin@exemple.org';      //  Email of data managers, separated by a comma
+```
 
 <br>
 
@@ -105,3 +120,4 @@ USER | Admin user in the htpasswd file | admin
 <br><br>
 
 [1]: https://github.com/inrae/pgd-mmdt/blob/main/dockerdbpart/initialisation/setupdb-js.template
+[2]: https://wpwebinfotech.com/blog/send-emails-using-php/
