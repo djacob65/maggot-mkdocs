@@ -15,6 +15,8 @@ some_url:
 
 This is a quick tutorial of how to use the Maggot tool in practice and therefore preferably targeting the end user. 
 
+See a short [Presentation][2]{:target="_blank"} and [Poster][3]{:target="_blank"} if you want to have a more general overview of the tool.
+
 <br>
 
 #### Overview
@@ -29,7 +31,7 @@ __Configuration__
 : <p>This module mainly concerns the data manager and makes it possible to construct all the terminology definition files, i.e. the metadata and sources of associated vocabularies. See [Definition files](../definitions) then [Configuration](../configuration).</p>
 
 __Private Access__
-: <p>This module allows data producer to temporarily protect access to metadata for the time necessary before sharing it within his collective. See [Private access key management](../../private-access/).</p>
+: <p>This module allows data producer to temporarily protect access to metadata for the time necessary before sharing it within his collective. See [Private access key management](../private-access/).</p>
 
 __Dictionaries__
 : <p>This module allows data producer to view content of all dictionaries. It also allows data steward to edit their content. See [Dictionaries](../dictionaries) for technical details only.</p>
@@ -54,4 +56,6 @@ __Publication__
 *[users]: The user are the persons who want to use the data.
 
 [1]: https://filebrowser.org/features
+[2]:  https://inrae.github.io/pgd-mmdt/pdf/MAGGOT_Presentation_Jan2024.pdf?download=false
+[3]:  https://inrae.github.io/pgd-mmdt/pdf/MAGGOT_Poster_Oct2023.pdf?download=false
 
