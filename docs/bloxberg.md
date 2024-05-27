@@ -52,7 +52,7 @@ You will need a [Ethereum address][5]{:target="_blank"} and an API key (must be 
 [4]: https://www.mpdl.mpg.de/en/
 [5]: https://info.etherscan.com/what-is-an-ethereum-address/
 [6]: https://bloxberg.org/developers-hut/documentation/
-[7]: https://forgemia.inra.fr/blockchain-esr
+[7]: https://forgemia.inra.fr/cedric.goby/blockchain-esr
 [8]: https://blockexplorer.bloxberg.org/
 [9]: https://en.wikipedia.org/wiki/Proof_of_stake
 [10]: https://en.wikipedia.org/wiki/Proof_of_authority

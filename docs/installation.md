@@ -50,9 +50,9 @@ See [Configuration settings](../settings)
 
 ***Warning*** : You have to pay attention to put the same MongoDB settings in all the above configuration files. It is best not to change anything. It would have been preferable to put a single configuration file but this was not yet done given the different languages involved (bash, javascript, python, PHP). To be done!
 
-***Note*** : If you want to run multiple instances, you will need to change in the *[run][23]{:target="_blank"}* file, *i)* the container names, *ii)* the data path, *iii)* the MongoDB volume name.
+***Note*** : If you want to run multiple instances, you will need to change in the *[run](../settings/#run)* file, *i)* the container names, *ii)* the data path, *iii)* the MongoDB volume name and *iv)* the MongoDB port
 
-The following two JSON files are defined by default but can be easily configured from the web interface. See the [Terminology Definition](../configuration/config) section.
+The following two JSON files are defined by default but can be easily configured from the web interface. See the [Terminology Configuration](../configuration) section.
 
 *  ***web/conf/config_terms.json*** : define the [terminology](../definitions/terminology)
 *  ***web/conf/maggot-schema.json*** : define the JSON schema used to validate metadata files.
@@ -128,7 +128,7 @@ sh ./run <option>
 </pre>
 
 * On the first line, the one which corresponds to the web interface, we see that port 80 of the docker is exported to port 8087 of the VM.
-Let's say that the IP address of your VM is 192.168.56.2, then in your browser you will need to put the URL http://192.168.56.2:8087/. You can of course change the port number in the '*[run][23]{:target="_blank"}*' file.
+Let's say that the IP address of your VM is 192.168.56.2, then in your browser you will need to put the URL http://192.168.56.2:8087/. You can of course change the port number in the '*[run](../settings/#run)*' file.
 
 * It may be preferable to use a lightweight http server like [nginx][27]{:target="_blank"} so that the Maggot URL will be http://192.168.56.2/maggot/. Below an example of config:
    ```sh
@@ -178,7 +178,7 @@ Let's say that the IP address of your VM is 192.168.56.2, then in your browser y
 
 When updating the application, it is imperative to preserve a whole set of configuration files as well as the content of certain directories (dictionaries, javascripts dedicated to vocabularies, etc.). An update script is available ([./etc/update-maggot.sh][19]{:target="_blank"}) preferably placed under '**/usr/local/bin**'. To preserve your configuration, it is recommended to create local configuration files.
 
-* A first file '**local.conf**' will contain all the parameters to be preserved, initially contained in the '*[run][23]{:target="_blank"}*' file. A small example could be as follow :
+* A first file '**local.conf**' will contain all the parameters to be preserved, initially contained in the '*[run](../settings/#run)*' file. A small example could be as follow :
    ```sh
    #!/bin/bash
 
@@ -189,7 +189,7 @@ When updating the application, it is imperative to preserve a whole set of confi
    DATADIR=/media/Workdir/Share/DATA/
    ```
 
-* A second file '**./web/inc/config/local.inc**' will contain all the parameters to be preserved, initially contained in the '*[./web/inc/config/config.inc][22]{:target="_blank"}*' file. A small example could be as follow :
+* A second file '**./web/inc/config/local.inc**' will contain all the parameters to be preserved, initially contained in the '*[./web/inc/config/config.inc](../settings/#incconfigconfiginc)*' file. A small example could be as follow :
    ```php
    <?php
 
@@ -221,7 +221,7 @@ When updating the application, it is imperative to preserve a whole set of confi
 
 ### File Browser
 
-You can provide access to your data via a [file browser][25]{:target="_blank"}. This application must be [installed separately][26]{:target="_blank"} but can be connected to Maggot by specifying the corresponding URL in the [configuration file][22]{:target="_blank"}. Users and their rights are managed in the filebrowser application. Likewise, we can also <a href="../images/filebrowser_fig2.png" data-lightbox="fig2">create links to the data without a password</a>. These links can be usefully specified as external resources in the metadata managed by Maggot.
+You can provide access to your data via a [file browser][25]{:target="_blank"}. This application must be [installed separately][26]{:target="_blank"} but can be connected to Maggot by specifying the corresponding URL in the [configuration file](../settings/#incconfigconfiginc). Users and their rights are managed in the filebrowser application. Likewise, we can also <a href="../images/filebrowser_fig2.png" data-lightbox="fig2">create links to the data without a password</a>. These links can be usefully specified as external resources in the metadata managed by Maggot.
 
 <center>
 <a href="../images/filebrowser_fig1.png" data-lightbox="fig10"><img src="../images/filebrowser_fig1.png" width="800px"></a><br>

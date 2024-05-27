@@ -115,6 +115,7 @@ DB_CONTAINER | Docker container name of the MongoDB | mmdt-db
 SCAN_CONTAINER | Docker container name of the Scan process | mmdt-scan
 WEB_CONTAINER | Docker container name of the Web interface | mmdt-web
 MONGO_VOL | Volume name for MongoDB | mmdt-mongodb
+MONGO_PORT | HTTP Port for MongoDB | 27017
 USER | Admin user in the htpasswd file | admin
 
 <br><br>

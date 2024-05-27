@@ -21,7 +21,7 @@ By clicking on the "Generate the metadata file" button, you can save it on your 
 <a href="../../images/tuto2_fig10.png" data-lightbox="fig10"><img src="../../images/tuto2_fig10.png" width="600px"></a>
 </center>
 
-Furthermore, if email sending has been configured (see [settings](../../settings)), then you have the possibility of sending the metadata file to the data managers for conservation, and possibly also for supporting its storage on data disk space if specific rights are required.
+Furthermore, if email sending has been configured (see [settings](../../settings/#incconfigconfiginc)), then you have the possibility of sending the metadata file to the data managers for conservation, and possibly also for supporting its storage on data disk space if specific rights are required.
 
 <center>
 <a href="../../images/tuto2_fig11.png" data-lightbox="fig11"><img src="../../images/tuto2_fig11.png" width="500px"></a>

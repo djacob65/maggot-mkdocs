@@ -56,6 +56,6 @@ __Publication__
 *[users]: The user are the persons who want to use the data.
 
 [1]: https://filebrowser.org/features
-[2]:  https://inrae.github.io/pgd-mmdt/pdf/MAGGOT_Presentation_Jan2024.pdf?download=false
-[3]:  https://inrae.github.io/pgd-mmdt/pdf/MAGGOT_Poster_Oct2023.pdf?download=false
+[2]: https://inrae.github.io/pgd-mmdt/pdf/MAGGOT_Presentation_Jan2024.pdf?download=false
+[3]: https://inrae.github.io/pgd-mmdt/pdf/MAGGOT_Poster_May2024.pdf?download=false
 

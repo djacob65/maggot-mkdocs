@@ -117,7 +117,7 @@ Four fields must be filled in :
 *[JSON]: JavaScript Object Notation : format used to represent structured information.
 *[autocomplete]: feature in which an application predicts the rest of a word a user is typing.
 *[data manager]: The data manager is the person who sets the data policy, i.e. its implementation and governance.
-*[data producer]: The data producer is the person who produced data and by extension has rights over it. She is also the one who has the best knowledge of it.
+*[data producers]: The data producers are the people who produced data and by extension have rights over it. They are also those who have the best knowledge of it.
 *[data steward]: The data steward is the person who is responsible for data quality, and therefore has a role in data curation.
 *[users]: The user are the persons who want to use the data.
 

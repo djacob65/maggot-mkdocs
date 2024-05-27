@@ -45,6 +45,12 @@ some_url:
 * **Issues tracker** : [inrae/pgd-mmdt/issues][16]{:target="_blank"}
 * **Instance online** : [INRAE UMR 1322 BFP][11]{:target="_blank"}
 
+<!--
+### Publication
+
+* **Preprint** :  Maggot: An ecosystem for sharing metadata within the web of FAIR Data, BIORXIV/2024/595703 (Submission to GigaScience, May 17, 2024)
+-->
+
 ### Contacts
 
 * Daniel Jacob ([INRAE UMR BFP][2]{:target="_blank"}) : [daniel.jacob @ inrae.fr][17]{:target="_blank"}
@@ -87,7 +93,8 @@ some_url:
 [13]: https://www.cesgo.org/catibaric/
 [14]: https://eng-mycsa.bordeaux-aquitaine.hub.inrae.fr/
 
-[15]: https://www.google.com/search?q=metadata+crosswalk+definition&oq=metadata+crosswalk
+[15]: https://chatgpt.com/share/9ba4693f-6135-4f37-adda-5cd3d136fb11
+<!-- https://www.google.com/search?q=metadata+crosswalk+definition&oq=metadata+crosswalk -->
 
 [16]: https://github.com/inrae/pgd-mmdt/issues
 [17]: https://orcid.org/0000-0002-6687-7169

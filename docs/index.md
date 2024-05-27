@@ -85,9 +85,9 @@ Indeed, all the JSON metadata files are scanned and parsed according to a fixed 
 
 ### Additional key points
 
-   * <p>Being able to generate descriptive metadata from the start of a project or study without waiting for all the data to be acquired or processed, nor for the moment when one wish to publish data, thus respecting the [research data lifecycle][20]{:target="_blank"} as best as possible</p>
-   * <p>The implementation of the tool requires involving all data stakeholders upstream (definition of the metadata schema, vocabularies, targeted data repositories, etc.); everyone has their role: [data manager/data steward][22]{:target="_blank"} on one side but also [scientists and data producers][21]{:target="_blank"} on the other.</p>
-   * <p>A progressive rise towards an increasingly [controlled and standardized vocabulary][23]{:target="_blank"} is not only possible but even encouraged. First we can start with a simple vocabulary dictionary used locally and grouping together domain vocabularies. Then we can consider the creation of a thesaurus with or without mapping to ontologies. The promotion of ontologies must also be done gradually by selecting those which are truly relevant for the collective. A tool like Maggot makes it easy to implement them.</p>
+   * <p>Being able to generate descriptive metadata from the start of a project or study without waiting for all the data to be acquired or processed, nor for the moment when one wish to publish data, thus respecting the [research data lifecycle][20]{:target="_blank"} as best as possible. [Read more][25]{:target="_blank"}.</p>
+   * <p>The implementation of the tool requires involving all data stakeholders upstream (definition of the metadata schema, vocabularies, targeted data repositories, etc.); everyone has their role: [data manager/data steward][22]{:target="_blank"} on one side but also [scientists and data producers][21]{:target="_blank"} on the other. [Read more][24]{:target="_blank"}.</p>
+   * <p>A progressive rise towards an increasingly [controlled and standardized vocabulary][23]{:target="_blank"} is not only possible but even encouraged. First we can start with a simple vocabulary dictionary used locally and grouping together domain vocabularies. Then we can consider the creation of a thesaurus with or without mapping to ontologies. The promotion of ontologies must also be done gradually by selecting those which are truly relevant for the collective. A tool like Maggot makes it easy to implement them. [Read more][26]{:target="_blank"}.</p>
 
 
 <br><br>
@@ -111,8 +111,8 @@ Indeed, all the JSON metadata files are scanned and parsed according to a fixed 
 [8]: https://open-research-europe.ec.europa.eu/for-authors/data-guidelines#approvedrepositories
 [9]: https://ddialliance.org/
 [10]: https://en.wikipedia.org/wiki/Metadata_standard
-[11]:  https://inrae.github.io/pgd-mmdt/pdf/MAGGOT_Presentation_Jan2024.pdf?download=false
-[12]:  https://inrae.github.io/pgd-mmdt/pdf/MAGGOT_Poster_Oct2023.pdf?download=false
+[11]: https://inrae.github.io/pgd-mmdt/pdf/MAGGOT_Presentation_Jan2024.pdf?download=false
+[12]: https://inrae.github.io/pgd-mmdt/pdf/MAGGOT_Poster_May2024.pdf?download=false
 [13]: https://pmb-bordeaux.fr/maggot/entry
 [14]: https://pmb-bordeaux.fr/maggot/search
 [15]: https://github.com/djacob65/maggot-fb
@@ -125,4 +125,7 @@ Indeed, all the JSON metadata files are scanned and parsed according to a fixed 
 [21]: https://www.opendatasoft.com/en/glossary/data-producer/
 [22]: https://www.opendatasoft.com/en/glossary/data-steward/
 [23]: https://pitt.libguides.com/metadatadiscovery/controlledvocabularies
+[24]: https://chatgpt.com/share/289ce83e-2db4-4f8f-a924-b0a37745b0d2
+[25]: https://chatgpt.com/share/34dd9b51-2371-494e-967d-83ba6e13c031
+[26]: https://chatgpt.com/share/d6588b81-2b25-4a78-8cf2-34b5e7cd96c4
 
