@@ -13,18 +13,18 @@ some_url:
 
 ### Mapping definition File
 
-The mapping file is used as indicated by its name to match a term chosen by the user during entry with another term from an ontology or a thesaurus and therefore to obtain a URL which will be used for referencing. It can be used for each [metadata crosswalk][1]{:target="_blank"} requiring such a mapping (e.g. to the [Dataverse](../dataverse), [Zenodo](../zenodo) or [JSON-LD](../json-ld) format).
+**The mapping file** (**_mapping.txt_**) is used as indicated by its name to match a term chosen by the user during entry with another term from an ontology or a thesaurus and therefore to obtain a URL which will be used for referencing. It can be used for each [metadata crosswalk][1]{:target="_blank"} requiring such a mapping (e.g. to the [Dataverse](../dataverse), [Zenodo](../zenodo) or [JSON-LD](../json-ld) format).
 
 The role of this definition file is illustrated with the figure above
 <center>
 <a href="../../images/mapping_fig2.png" data-lightbox="fig2"><img src="../../images/mapping_fig2.png" width="600px"></a>
 </center>
 <br>
-	 
+
 The file must have ***5 columns*** with headers defined as follows:
 
    * column 1 - **CVname** : name of the mapping entry
-   * column 2 - **CVtype** : type of the CV target (must be either *bioportal* or *skosmos*)
+   * column 2 - **CVtype** : type of the CV target (by default, must be either *ontoportal*, *skosmos* or *ols*)
    * column 3 - **CVurl** : URL of the corresponding web API
    * column 4 - **CVterm** : name of the thesaurus or the ontology list separated by a comma
    * column 5 - **CVlang** : the chosen language (mainly for thesauri)

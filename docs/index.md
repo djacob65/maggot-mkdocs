@@ -13,7 +13,7 @@ some_url:
 
 ![](images/logo.png)
 <center>
-<h2 style="color: darkviolet;">An ecosystem for sharing metadata</h2>
+<h2 style="color: darkviolet;">An ecosystem for producing and sharing metadata</h2>
 <img src="images/overview.png" width="1000px">
 </center>
 <br>
@@ -85,9 +85,9 @@ Indeed, all the JSON metadata files are scanned and parsed according to a fixed 
 
 ### Additional key points
 
-   * <p>Being able to generate descriptive metadata from the start of a project or study without waiting for all the data to be acquired or processed, nor for the moment when one wish to publish data, thus respecting the [research data lifecycle][20]{:target="_blank"} as best as possible. [Read more][25]{:target="_blank"}.</p>
-   * <p>The implementation of the tool requires involving all data stakeholders upstream (definition of the metadata schema, vocabularies, targeted data repositories, etc.); everyone has their role: [data manager/data steward][22]{:target="_blank"} on one side but also [scientists and data producers][21]{:target="_blank"} on the other. [Read more][24]{:target="_blank"}.</p>
-   * <p>A progressive rise towards an increasingly [controlled and standardized vocabulary][23]{:target="_blank"} is not only possible but even encouraged. First we can start with a simple vocabulary dictionary used locally and grouping together domain vocabularies. Then we can consider the creation of a thesaurus with or without mapping to ontologies. The promotion of ontologies must also be done gradually by selecting those which are truly relevant for the collective. A tool like Maggot makes it easy to implement them. [Read more][26]{:target="_blank"}.</p>
+   * <p>Being able to generate descriptive metadata from the start of a project or study without waiting for all the data to be acquired or processed, nor for the moment when one wish to publish data, thus respecting the [research data lifecycle][20]{:target="_blank"} as best as possible. [Read more](chats/chat2){:target="_blank"}.</p>
+   * <p>The implementation of the tool requires involving all data stakeholders upstream (definition of the metadata schema, vocabularies, targeted data repositories, etc.); everyone has their role: [data manager/data steward][22]{:target="_blank"} on one side but also [scientists and data producers][21]{:target="_blank"} on the other. [Read more](chats/chat1){:target="_blank"}.</p>
+   * <p>A progressive rise towards an increasingly [controlled and standardized vocabulary][23]{:target="_blank"} is not only possible but even encouraged. First we can start with a simple vocabulary dictionary used locally and grouping together domain vocabularies. Then we can consider the creation of a thesaurus with or without mapping to ontologies. The promotion of ontologies must also be done gradually by selecting those which are truly relevant for the collective. A tool like Maggot makes it easy to implement them (See [Vocabulary](./definitions/vocabulary.md)). [Read more](chats/chat3){:target="_blank"}.</p>
 
 
 <br><br>

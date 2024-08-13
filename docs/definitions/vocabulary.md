@@ -55,27 +55,46 @@ some_url:
 </center>
 <br>
 
-**5** - **Vocabulary based on a SKOSMOS Thesaurus with multiple selection** (*multiselect*) 
+**5** - **Multi-select vocabulary, based on an API managed by Twitter's Typeahead library.** (*multiselect*) 
 
-* [SKOSMOS][6]{:target="_blank"} is a web tool facilitating the posting of controlled vocabulary online in the form of a [thesaurus][9]{:target="_blank"} according to the [SKOS][8]{:target="_blank"} data model. It offers a navigation interface as well as a web API. A simple JavaScript allows you to easily connect this web API with a multiselect field.
-* The JavaScript file must have the same name as the assigned variable (here _VOvocab_) and must present under _web/js/autocomplete_. See for instance [VOvocab.js][10]{:target="_blank"}.
+* Maggot embeds [Twitter's Typeahead library][16]{:target="_blank"} making it relatively easy for a data manager to implement a new vocabulary from its web API. To do this, it is necessary to create two scripts (*<ws\>_typeahead.js* and *<wstype\>.inc*) which will each be used at one stage of the process as shown in the following figure:
+
+<br>
+<center>
+<a href="../../images/vocabulary_fig7.png" data-lightbox="fig7"><img src="../../images/vocabulary_fig7.png" width="600px"></a>
+</center>
+
+1. *<ws\>_typeahead.js* : This file corresponds to the API call when entering vocabulary using Twitter's Typeahead library. The prefix *<ws\>* standing for web service, must be positioned so as to correspond to the name of the service indicated in the *CVname* column of the mapping file (see [mapping](../mapping)) as well as to the corresponding value for the '*ws*' attribute in the column '*features*' of the terminology definition file (see [definitions](../terminology)). This file must then be placed under the *web/js/autocomplete* directory. You will find a [template file][17]{:target="_blank"} in this directory.
+
+2. *<wstype\>.inc* : This file corresponds to the API call while metadata crosswalks processus and based on the mapping file ([*web/conf/mapping.txt*](../mapping)).The prefix *<ws_type\>* standing for web service type, must be positioned so as to correspond to the type of the service indicated in the *CVtype* column of the mapping file. This file must then be placed under the *web/inc/mapping/* directory. You will find a [template file][18]{:target="_blank"} in this directory.
+
+<br>
+
+* By defaut, Maggot already provides some vocaburay web services implemented in this way such as The [SKOSMOS][6]{:target="_blank"} thesauri, the ontology portals based on [OntoPortal][19]{:target="_blank"} and the [EMBL-EBI Ontology Lookup Service][20]{:target="_blank"}. The figure below shows the configuration in the terminology definition file and the corresponding screenshots for each vocabulary.
+
+* With the help of this library, this allows users to select a term from a list of vocabulary terms within a drop-down list. The list of terms has been pre-selected based on the first letters entered in the “Search for value” box. This list is dynamically refreshed when letters are added or modified. So, unlike a single call to the API returning the entire list of terms in memory, which can take a very long time to load, the calls are made dynamically on the basis of a portion of a word, thus limiting the number of terms to retrieve. Thus this makes use very fluid.
 
 <center>
-<a href="https://thesaurus.inrae.fr/thesaurus-inrae/en/" target="_blank"><img src="../../images/vocabulary_fig5.png" width="800px"></a>
+<a href="../../images/vocabulary_fig7b.png" data-lightbox="fig7b"><img src="../../images/vocabulary_fig7b.png" width="800px"></a>
 </center>
 <br>
 
-**6** - **Vocabulary based on an OntoPortal with multiple selection** (*multiselect*) 
 
-* Portals based on [OntoPortal][7]{:target="_blank"} offer the wealth of ontologies according to several domains of application (e.g. [BioPortal][11]{:target="_blank"} in the biomedical domain, [AgroPortal][12]{:target="_blank"} in the domain of plants).
-* No need of JavaScript file. The [Bioportal Autocompletion widget][14]{:target="_blank"} has been [implemented into Maggot][15]{:target="_blank"}. You have to only declare the ontology you want to use directly into the terminology definition file in order to easily connect this widget with a multiselect field.
+1. [AgroPortal][22]{:target="_blank"} and [BioPortal][23]{:target="_blank"} are both based on [OntoPortal][19]{:target="_blank"} which is a generic technology to build ontology repositories or semantic artefact catalogues.
+
+2. [SKOSMOS][6]{:target="_blank"} is a web tool facilitating the posting of controlled vocabulary online in the form of a [thesaurus][9]{:target="_blank"} according to the [SKOS][8]{:target="_blank"} data model. It offers a navigation interface as well as a web API.
+
+3. [EMBL-EBI Ontology Lookup Service][20]{:target="_blank"} is a repository for biomedical ontologies that aims to provide a single point of access to the latest ontology versions. You can browse the ontologies through the website as well as programmatically via the OLS API. 
+
+<br>
+
+* Here is, for example, the implementation of the [INRAE Thesaurus][21]{:target="_blank"}, a web service based on [SKOSMOS][6]{:target="_blank"}. The figure below shows in more detail how to fill in the definition files linked to the two scripts necessary for implementing the web service :
 
 <center>
-<a href="https://agroportal.lirmm.fr/" target="_blank"><img src="../../images/vocabulary_fig6.png" width="800px"></a>
+<a href="../../images/vocabulary_fig7c.png" data-lightbox="fig7b"><img src="../../images/vocabulary_fig7c.png" width="800px"></a>
 </center>
 <br>
 
-<br>
 
 *[API]: Application Program Interface in contrast with a User Interface. It is a way for two or more computer programs to communicate with each other. 
 
@@ -94,3 +113,11 @@ some_url:
 [13]: https://en.wikipedia.org/wiki/JavaScript
 [14]: https://bioportal.bioontology.org/ontologies/STY?p=widgets
 [15]: https://github.com/inrae/pgd-mmdt/blob/main/web/js/bpsearch.min.js
+[16]: https://twitter.github.io/typeahead.js/
+[17]: https://github.com/inrae/pgd-mmdt/blob/main/web/js/autocomplete/template_typeahead.js
+[18]: https://github.com/inrae/pgd-mmdt/blob/main/web/inc/mapping/template.inc
+[19]: https://ontoportal.org/
+[20]: https://www.ebi.ac.uk/ols4
+[21]: https://thesaurus.inrae.fr/thesaurus-inrae/en/
+[22]: https://agroportal.lirmm.fr/
+[23]: https://bioportal.bioontology.org/

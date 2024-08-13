@@ -24,7 +24,7 @@ some_url:
 
 
 * We start from the Maggot JSON format metadata file generated from the web interface and based on the metadata profile defined by the terminology definition files. 
-* Then from a file defining the correspondence between the Maggot fields and those of the target repository, we can perform a [metadata crosswalk][7]{:target="_blank"} to the JSON format supported by the web API of the target repository.
+* Then from a file defining the correspondence between the Maggot fields and those of the target repository, we can perform a [metadata crosswalk](../chats/chat4){:target="_blank"} to the JSON format supported by the web API of the target repository.
 * During the process we enrich the metadata with controlled vocabularies based either on dictionaries or on thesauri and/or ontologies. For the latter cases, we use the web APIs of these sources to perform the mapping (see the [definition of mapping](../definitions/mapping)).
 * Finally, to be able to carry out the transfer i.e. the submission to the target repository (we say "push" for short), we first need to connect to the repository in order to retrieve the key (the [API token][1]{:target="_blank"}) authorizing us to submit the dataset. This obviously assumes that we have the privileges (creation/modification rights) to do so.
 
@@ -35,6 +35,5 @@ some_url:
 [4]: https://dataverse.org/
 [5]: https://www.openaire.eu/zenodo-guide
 [6]: https://open-research-europe.ec.europa.eu/for-authors/data-guidelines#approvedrepositories
-[7]: https://en.wikipedia.org/wiki/Schema_crosswalk
 
 # https://www.google.com/search?q=metadata+crosswalk+definition&oq=metadata+crosswalk

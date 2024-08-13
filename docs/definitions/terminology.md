@@ -63,6 +63,8 @@ The file must have 9 columns with headers defined as follows:
 * column 7 - **Features** : dependings on the Type value, one can specifiy some specific features. If several features, they must be separated by a comma.
      * **open=0** or **open=1** (***checkbox***) :  indicates if the selection is opened or not. See [Vocabulary](../vocabulary).
      * **autocomplete=_entity_** (***textbox***, ***checkbox*** & ***multiselect***) :  The *entity.js* file must be present under ***web/cvlist/entity/*** if the entity is a dictionary otherwise it must be present under *[web/js/autocomplete][1]{:target="_blank"}*. See [Vocabulary](../vocabulary).
+     * **ws=_web_service name_** (***multiselect***) : indicates the web service name, e.g *VO*, *ols*, *agroportal* or *bioportal*. Attribute available only if the API call for the vocabulary is based on the [Twitter's Typeahead library][7]{:target="_blank"}. In this case, the autocomplete attribute must be equal to *typeahead*. See [Vocabulary](../vocabulary).
+     * **onto=_ontology list/thesaurus name_** (***multiselect***) : indicates the ontology list, e.g. for a web service based on [OntoPortal][9] or the thesaurus name, e.g. for a web service based on [SKOSMOS][8]. In case of an ontology list, the separator (_:_) must a colon with no space (eg. _OBI:EFO:PO:ENVO_). Attribute available only if the API call for the vocabulary is based on the [Twitter's Typeahead library][7]{:target="_blank"}. In this case, the autocomplete attribute must be equal to *typeahead*. See [Vocabulary](../vocabulary).
      * **width=_NNNpx_** (***textbox***, ***dropbox***, ***datebox***) : allows you to specify the width of the box. Usefull if you want put several fields in the same line. See note 1 below.
      * **row=_NN_** and **cols=_NN_** (***areabox***) : allows you to specify the row and column size of the textarea.
 * column 8 - **Label** : Labels corresponding to the fields that will appear in the web interface
@@ -123,3 +125,7 @@ Same example as above converted to HTML format using Markdown format
 [4]: https://en.wikipedia.org/wiki/Metadata_standard
 [5]: https://ddialliance.org/
 [6]: https://ddialliance.org/project/the-dataverse-project
+[7]: https://twitter.github.io/typeahead.js/
+[8]: https://skosmos.org/
+[9]: https://ontoportal.org/
+

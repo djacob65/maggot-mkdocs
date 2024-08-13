@@ -35,7 +35,7 @@ some_url:
 * Concerning the first idea: "Just" place a metadata file (JSON format) describing the project data in each subdirectory, and then find the projects and/or data corresponding to specific criteria. The choice fell on the JSON format, very suitable for describing metadata, readable by both humans and machines.
 * Concerning the second idea: Given the diversity of the fields, the approach chosen is to be both the most flexible and the most pragmatic possible by allowing users to choose their own vocabulary (controlled or not) corresponding to the reality of their field and their activities. However, a good approach is as much as possible to use only controlled vocabulary, that is to say relevant and sufficient vocabulary used as a reference in the field concerned to allow users to describe a project and its context without having to add additional terms. To this end, the tool must allow users a progressive approach towards the adoption of standardized controlled vocabularies (thesauri or even ontologies).
 
-* With the approach proposed by Maggot, initially there is no question of opening the data, but of managing metadata associated with the data on a storage space with a precise perimeter represented by the collective (unit, team, project , platform, …). The main characteristic of the tool is, above all, to “capture” the metadata as easily as possible according to a well-chosen metadata schema. However, the opening of data via their metadata must be a clearly stated objective within the framework of projects financed by public institutions (e.g Europe). Therefore if you have taken care to correctly define your metadata schema so that it is possible to make a [metadata crosswalk][15]{:target="_blank"} (using a mapping file) with a data repository recognized by the international community, then you can easily "push" its metadata with the data without having re-enter anything.
+* With the approach proposed by Maggot, initially there is no question of opening the data, but of managing metadata associated with the data on a storage space with a precise perimeter represented by the collective (unit, team, project , platform, …). The main characteristic of the tool is, above all, to “capture” the metadata as easily as possible according to a well-chosen metadata schema. However, the opening of data via their metadata must be a clearly stated objective within the framework of projects financed by public institutions (e.g Europe). Therefore if you have taken care to correctly define your metadata schema so that it is possible to make a [metadata crosswalk](../chats/chat4){:target="_blank"} (using a mapping file) with a data repository recognized by the international community, then you can easily "push" its metadata with the data without having re-enter anything.
 
 ---
 
@@ -45,11 +45,10 @@ some_url:
 * **Issues tracker** : [inrae/pgd-mmdt/issues][16]{:target="_blank"}
 * **Instance online** : [INRAE UMR 1322 BFP][11]{:target="_blank"}
 
-<!--
-### Publication
+### Preprint
 
-* **Preprint** :  Maggot: An ecosystem for sharing metadata within the web of FAIR Data, BIORXIV/2024/595703 (Submission to GigaScience, May 17, 2024)
--->
+* D. Jacob, F. Ehrenmann, R. David, J. Tran, C. Mirande-Ney, P. Chaumeil (2024) Maggot: An ecosystem for sharing metadata within the web of FAIR Data, BioRxiv, [DOI:10.1101/2024.05.24.595703](https://www.biorxiv.org/content/10.1101/2024.05.24.595703v1.full){:target="_blank"}
+
 
 ### Contacts
 
@@ -93,7 +92,6 @@ some_url:
 [13]: https://www.cesgo.org/catibaric/
 [14]: https://eng-mycsa.bordeaux-aquitaine.hub.inrae.fr/
 
-[15]: https://chatgpt.com/share/9ba4693f-6135-4f37-adda-5cd3d136fb11
 <!-- https://www.google.com/search?q=metadata+crosswalk+definition&oq=metadata+crosswalk -->
 
 [16]: https://github.com/inrae/pgd-mmdt/issues

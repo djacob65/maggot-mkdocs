@@ -71,6 +71,7 @@ sh ./run <option>
 **Options**:
 
 * ***build*** : Create the 3 Docker images namely ***pgd-mmdt-db***, ***pgd-mmdt-scan*** and ***pgd-mmdt-web***
+* ***pull*** : Get (pull) from DockerHub the 3 Docker images namely ***pgd-mmdt-db***, ***pgd-mmdt-scan*** and ***pgd-mmdt-web***
 * ***start*** : _1_) Launch the 3 services by creating the Docker containers corresponding to the Docker images; _2_) Create also the MongoDB volume.
 * ***stop*** :  _1_) Remove all the 3 Docker containers; _2_) Remove the MongoDB volume.
 * ***initdb*** : Create and initialize the Mongo collection
@@ -84,9 +85,14 @@ sh ./run <option>
 
 #### Starting the application
 
-* You must first build the 3 docker container images if this has not already been done, by :
+* You must first either build the 3 docker container images ... 
    ```sh
    sh ./run build
+   ```
+
+* ... or pull the 3 images from DockerHub
+   ```sh
+   sh ./run pull
    ```
 
 * The application can be sequentially started :

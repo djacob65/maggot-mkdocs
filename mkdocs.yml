@@ -1,7 +1,7 @@
 site_name: Maggot
 site_description: Maggot, Metadata aggregation on data storage
 site_author: Daniel Jacob
-copyright: INRAE, 2023
+copyright: INRAE, 2022-2024
 docs_dir: docs/
 
 repo_name: GitHub
