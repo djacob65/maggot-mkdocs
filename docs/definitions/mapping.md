@@ -29,6 +29,9 @@ The file must have ***5 columns*** with headers defined as follows:
    * column 4 - **CVterm** : name of the thesaurus or the ontology list separated by a comma
    * column 5 - **CVlang** : the chosen language (mainly for thesauri)
 
+Note that a corresponding *<CVtype\>.inc* file must be located under *web/inc/mapping*.
+<br>
+
 Below an example of Mapping definition file (TSV)
 
 <center>

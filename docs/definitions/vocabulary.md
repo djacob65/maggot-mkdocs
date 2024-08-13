@@ -3,7 +3,7 @@ title: Maggot - Vocabulary
 summary: 
 authors:
     - Daniel Jacob
-date: 2023-10-09
+date: 2024-08-13
 some_url:
 ---
 
@@ -57,9 +57,10 @@ some_url:
 
 **5** - **Multi-select vocabulary, based on an API managed by Twitter's Typeahead library.** (*multiselect*) 
 
-* Maggot embeds [Twitter's Typeahead library][16]{:target="_blank"} making it relatively easy for a data manager to implement a new vocabulary from its web API. To do this, it is necessary to create two scripts (*<ws\>_typeahead.js* and *<wstype\>.inc*) which will each be used at one stage of the process as shown in the following figure:
+* Maggot embeds [Twitter's Typeahead library][16]{:target="_blank"} making it relatively easy for a data manager to implement a new vocabulary from its web API. With the help of this library, this allows users to select a term from a list of vocabulary terms within a drop-down list. The list of terms has been pre-selected based on the first letters entered in the “Search for value” box. This list is dynamically refreshed when letters are added or modified. So, unlike a single call to the API returning the entire list of terms in memory, which can take a very long time to load, the calls are made dynamically on the basis of a portion of a word, thus limiting the number of terms to retrieve. Thus this makes use very fluid.
 
-<br>
+* To immplement an API-based web service, it is necessary to create two scripts (*<ws\>_typeahead.js* and *<wstype\>.inc*) which will each be used at one stage of the process as shown in the following figure:
+
 <center>
 <a href="../../images/vocabulary_fig7.png" data-lightbox="fig7"><img src="../../images/vocabulary_fig7.png" width="600px"></a>
 </center>
@@ -72,12 +73,9 @@ some_url:
 
 * By defaut, Maggot already provides some vocaburay web services implemented in this way such as The [SKOSMOS][6]{:target="_blank"} thesauri, the ontology portals based on [OntoPortal][19]{:target="_blank"} and the [EMBL-EBI Ontology Lookup Service][20]{:target="_blank"}. The figure below shows the configuration in the terminology definition file and the corresponding screenshots for each vocabulary.
 
-* With the help of this library, this allows users to select a term from a list of vocabulary terms within a drop-down list. The list of terms has been pre-selected based on the first letters entered in the “Search for value” box. This list is dynamically refreshed when letters are added or modified. So, unlike a single call to the API returning the entire list of terms in memory, which can take a very long time to load, the calls are made dynamically on the basis of a portion of a word, thus limiting the number of terms to retrieve. Thus this makes use very fluid.
-
 <center>
 <a href="../../images/vocabulary_fig7b.png" data-lightbox="fig7b"><img src="../../images/vocabulary_fig7b.png" width="800px"></a>
 </center>
-<br>
 
 
 1. [AgroPortal][22]{:target="_blank"} and [BioPortal][23]{:target="_blank"} are both based on [OntoPortal][19]{:target="_blank"} which is a generic technology to build ontology repositories or semantic artefact catalogues.
@@ -88,12 +86,18 @@ some_url:
 
 <br>
 
-* Here is, for example, the implementation of the [INRAE Thesaurus][21]{:target="_blank"}, a web service based on [SKOSMOS][6]{:target="_blank"}. The figure below shows in more detail how to fill in the definition files linked to the two scripts necessary for implementing the web service :
+* Here is, for example, the implementation of the [INRAE Thesaurus][21]{:target="_blank"}, a web service based on [SKOSMOS][6]{:target="_blank"}. The figure below shows in more details how to fill in the definition files linked to the two scripts necessary for implementing the web service :
 
 <center>
 <a href="../../images/vocabulary_fig7c.png" data-lightbox="fig7b"><img src="../../images/vocabulary_fig7c.png" width="800px"></a>
 </center>
 <br>
+
+* Links to the two scripts :
+
+    * [web/js/autocomplete/VO_typeahead.js][24]{:target="_blank"}
+	* [web/inc/mapping/skosmos.inc][25]{:target="_blank"}
+
 
 
 *[API]: Application Program Interface in contrast with a User Interface. It is a way for two or more computer programs to communicate with each other. 
@@ -121,3 +125,5 @@ some_url:
 [21]: https://thesaurus.inrae.fr/thesaurus-inrae/en/
 [22]: https://agroportal.lirmm.fr/
 [23]: https://bioportal.bioontology.org/
+[24]: https://github.com/inrae/pgd-mmdt/blob/main/web/js/autocomplete/VO_typeahead.js
+[25]: https://github.com/inrae/pgd-mmdt/blob/main/web/inc/mapping/skosmos.inc
