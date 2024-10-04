@@ -50,6 +50,8 @@ See [Configuration settings](../settings)
 
 ***Warning*** : You have to pay attention to put the same MongoDB settings in all the above configuration files. It is best not to change anything. It would have been preferable to put a single configuration file but this was not yet done given the different languages involved (bash, javascript, python, PHP). To be done!
 
+***Warning*** : If you are using VirtualBox with Windows then you must make sure to [Enable AVX](../avx_win11_vbox)
+
 ***Note*** : If you want to run multiple instances, you will need to change in the *[run](../settings/#run)* file, *i)* the container names, *ii)* the data path, *iii)* the MongoDB volume name and *iv)* the MongoDB port
 
 The following two JSON files are defined by default but can be easily configured from the web interface. See the [Terminology Configuration](../configuration) section.
@@ -85,12 +87,12 @@ sh ./run <option>
 
 #### Starting the application
 
-* You must first either build the 3 docker container images ... 
+* You must first either build the 3 docker container images ... (using MongoDB 6.0+ with [AVX enabled](../avx_win11_vbox))
    ```sh
    sh ./run build
    ```
 
-* ... or pull the 3 images from DockerHub
+* ... or pull the 3 images from DockerHub (using MongoDB 4.4)
    ```sh
    sh ./run pull
    ```

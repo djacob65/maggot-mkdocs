@@ -57,9 +57,9 @@ some_url:
 
 **5** - **Multi-select vocabulary, based on an API managed by Twitter's Typeahead library.** (*multiselect*) 
 
-* Maggot embeds [Twitter's Typeahead library][16]{:target="_blank"} making it relatively easy for a data manager to implement a new vocabulary from its web API. With the help of this library, this allows users to select a term from a list of vocabulary terms within a drop-down list. The list of terms has been pre-selected based on the first letters entered in the “Search for value” box. This list is dynamically refreshed when letters are added or modified. So, unlike a single call to the API returning the entire list of terms in memory, which can take a very long time to load, the calls are made dynamically on the basis of a portion of a word, thus limiting the number of terms to retrieve. Thus this makes use very fluid.
+* Maggot embeds [Twitter's Typeahead library][16]{:target="_blank"} making it relatively easy for a data manager to implement a new vocabulary from its web API. With the help of this library, this allows users to select a term from a list of vocabulary terms within a drop-down list. The list of terms has been pre-selected based on the first letters entered in the “Search for value” box. This list is dynamically refreshed when letters are added or modified. So, unlike a single call to the API returning the entire list of terms in memory, which can take a very long time to load, the calls are made dynamically on the basis of a portion of a word (3 letters minimum by default), limiting the number of terms to retrieve. Thus this makes use very fluid.
 
-* To immplement an API-based web service, it is necessary to create two scripts (*<ws\>_typeahead.js* and *<wstype\>.inc*) which will each be used at one stage of the process as shown in the following figure:
+* To implement an API-based web service, it is necessary to create two scripts (*<ws\>_typeahead.js* and *<wstype\>.inc*) which will each be used at one stage of the process as shown in the following figure:
 
 <center>
 <a href="../../images/vocabulary_fig7.png" data-lightbox="fig7"><img src="../../images/vocabulary_fig7.png" width="600px"></a>
@@ -67,11 +67,11 @@ some_url:
 
 1. *<ws\>_typeahead.js* : This file corresponds to the API call when entering vocabulary using Twitter's Typeahead library. The prefix *<ws\>* standing for web service, must be positioned so as to correspond to the name of the service indicated in the *CVname* column of the mapping file (see [mapping](../mapping)) as well as to the corresponding value for the '*ws*' attribute in the column '*features*' of the terminology definition file (see [definitions](../terminology)). This file must then be placed under the *web/js/autocomplete* directory. You will find a [template file][17]{:target="_blank"} in this directory.
 
-2. *<wstype\>.inc* : This file corresponds to the API call while metadata crosswalks processus and based on the mapping file ([*web/conf/mapping.txt*](../mapping)).The prefix *<ws_type\>* standing for web service type, must be positioned so as to correspond to the type of the service indicated in the *CVtype* column of the mapping file. This file must then be placed under the *web/inc/mapping/* directory. You will find a [template file][18]{:target="_blank"} in this directory.
+2. *<wstype\>.inc* : This file corresponds to the API call while metadata crosswalks processus and based on the mapping file ([*web/conf/mapping.txt*](../mapping)).The prefix *<wstype\>* standing for web service type, must be positioned so as to correspond to the type of the service indicated in the *CVtype* column of the mapping file. This file must then be placed under the *web/inc/mapping/* directory. You will find a [template file][18]{:target="_blank"} in this directory.
 
 <br>
 
-* By defaut, Maggot already provides some vocaburay web services implemented in this way such as The [SKOSMOS][6]{:target="_blank"} thesauri, the ontology portals based on [OntoPortal][19]{:target="_blank"} and the [EMBL-EBI Ontology Lookup Service][20]{:target="_blank"}. The figure below shows the configuration in the terminology definition file and the corresponding screenshots for each vocabulary.
+* By defaut, Maggot already provides some vocaburay web services implemented in this way such as the ontology portals based on [OntoPortal][19]{:target="_blank"}, the [SKOSMOS][6]{:target="_blank"} thesauri and the [EMBL-EBI Ontology Lookup Service][20]{:target="_blank"}. The figure below shows the configuration in the terminology definition file and the corresponding screenshots for each vocabulary.
 
 <center>
 <a href="../../images/vocabulary_fig7b.png" data-lightbox="fig7b"><img src="../../images/vocabulary_fig7b.png" width="800px"></a>
@@ -82,7 +82,9 @@ some_url:
 
 2. [SKOSMOS][6]{:target="_blank"} is a web tool facilitating the posting of controlled vocabulary online in the form of a [thesaurus][9]{:target="_blank"} according to the [SKOS][8]{:target="_blank"} data model. It offers a navigation interface as well as a web API.
 
-3. [EMBL-EBI Ontology Lookup Service][20]{:target="_blank"} is a repository for biomedical ontologies that aims to provide a single point of access to the latest ontology versions. You can browse the ontologies through the website as well as programmatically via the OLS API. 
+3. [EMBL-EBI Ontology Lookup Service][20]{:target="_blank"} is a repository for biomedical ontologies that aims to provide a single point of access to the latest ontology versions. You can browse the ontologies through the website as well as programmatically via the OLS API.
+
+Note: we also support the [Terminology Service for NFDI4Health][26]{:target="_blank"} given that it is also based on OLS.
 
 <br>
 
@@ -117,7 +119,7 @@ some_url:
 [13]: https://en.wikipedia.org/wiki/JavaScript
 [14]: https://bioportal.bioontology.org/ontologies/STY?p=widgets
 [15]: https://github.com/inrae/pgd-mmdt/blob/main/web/js/bpsearch.min.js
-[16]: https://twitter.github.io/typeahead.js/
+[16]: https://github.com/twitter/typeahead.js/blob/master/doc/jquery_typeahead.md
 [17]: https://github.com/inrae/pgd-mmdt/blob/main/web/js/autocomplete/template_typeahead.js
 [18]: https://github.com/inrae/pgd-mmdt/blob/main/web/inc/mapping/template.inc
 [19]: https://ontoportal.org/
@@ -127,3 +129,4 @@ some_url:
 [23]: https://bioportal.bioontology.org/
 [24]: https://github.com/inrae/pgd-mmdt/blob/main/web/js/autocomplete/VO_typeahead.js
 [25]: https://github.com/inrae/pgd-mmdt/blob/main/web/inc/mapping/skosmos.inc
+[26]: https://semanticlookup.zbmed.de/ols/index
