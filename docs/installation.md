@@ -239,6 +239,21 @@ You can provide access to your data via a [file browser][25]{:target="_blank"}. 
 
 <br>
 
+-----
+
+### SSO layer
+
+**Purpose**: Implement[Single Sign-On][30]{:target="_blank"} (SSO) authentication through a web application without modifying it.
+
+The initial choice was not to manage users in the Maggot tool. This choice was made to promote the complete opening by default of metadata within a collective. However, for management within a collective that goes beyond a simple intranet, it is necessary to set up an authentication layer. Setting up such a layer can be done independently of the Maggot tool, i.e. without modifying its code or configuration.
+* See [source code][32]{:target="_blank"} on github : https://github.com/djacob65/maggot-sso/
+
+An implementation is proposed online, which can serve as a basis for a larger configuration. Although requiring a level of technicality slightly above average, a [Wiki page][31]{:target="_blank"} is provided with a detailed description. 
+
+
+<br>
+<br>
+
 [1]: https://en.wikipedia.org/wiki/Virtual_machine
 [2]: https://www.virtualbox.org/
 [3]: https://www.vmware.com/products/workstation-player.html
@@ -267,3 +282,9 @@ You can provide access to your data via a [file browser][25]{:target="_blank"}. 
 [25]: https://filebrowser.org/
 [26]: https://github.com/djacob65/maggot-fb
 [27]: https://docs.nginx.com/nginx/admin-guide/web-server/web-server/
+
+[30]: https://en.wikipedia.org/wiki/Single_sign-on
+[31]: https://github.com/djacob65/maggot-sso/wiki/Single-Sign-On
+[32]: https://github.com/djacob65/maggot-sso/
+
+
